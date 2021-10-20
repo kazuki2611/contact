@@ -22,42 +22,7 @@
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <boby>
-  <header class="l-header">
-    <img class="p-header__image" src="./hader-bg.svg">
-    <div class="p-header">
 
-
-
-      <div class="p-header__inner">
-        <div class="p-header__wrap">
-          <div class="c-header__logo">
-            <img src="./header-logo.svg">
-          </div>
-
-        </div>
-        <div class="p-black-bg" id="js-black-bg"></div>
-        <ul class="c-global__menu">
-          <li>お部屋探し</li>
-          <li>ブログ</li>
-          <li>ニュース</li>
-          <li>企業情報</li>
-          <li>お問い合わせ</li>
-
-        </ul>
-        <button class="c-hamburger  is-hamburger ">
-          <span></span>
-
-        </button>
-      </div>
-    </div>
-    <div class="p-header__text">
-      <h1>
-        CONTACT
-      </h1>
-      <p>
-        お問いあわせ
-      </p>
-  </header>
   <main>
 
     <div class="p-form">
@@ -71,7 +36,7 @@
       <div class="p-form__service">
         <img src="./form.png">
         <div class="p-form__service__wrap c-form">
-          <span>
+          <span class="c-form__part">
             賃貸マンション
           </span>
           <h3 class="p-form__service__text">
@@ -83,44 +48,123 @@
         </div>
       </div>
       <div class="p-form__label"></div>
-      <h2 class="c-title">
+
+      <label for="rendou" class="c-label">
         お名前
-      </h2>
-      <label for="rendou"></label> <input id="name" type="text" name="name" class="c-form__input" placeholder="田中太朗"
-        required="required">
+      </label>
+      <div class="p-input">
 
+        <input id="name" type="text" name="name" class="c-input" placeholder="田中太朗" required="必須">
+      </div>
+      
+      <p>
+        お名前を入力してください
+      </p>
 
-      <h2 class="c-title">
+      <label for="rendou" class="c-label">
         電話番号
-      </h2>
-      <label for="rendou"></label> <input id="name" type="text" name="tel" class="c-form__input"
-        placeholder="090-1234-5678" required="required">
-      <h2 class="c-title">
-        メールアドレス
-      </h2>
+      </label>
+      <div class="p-input">
+
+        <input id="name" type="tel" name="tel" class="c-input" placeholder="090-1234-5678" required>
+      </div>
+      <p>
+        電話番号を入力してください
+      </p>
+      <label for="rendou" class="c-label">
+        メールアドレス</label>
+      <div class="p-input">
+
+        <input id="name" type="email" placeholder="example@mail.com" name="email" class="c-input">
+      </div>
+      <p>
+        メールアドレスを入力してください
+      </p>
       <h2 class="c-title">
         折り返しのご連絡希望日時
       </h2>
-      <h2 class="c-title">
+
+      <p>
+        折り返しのご連絡希望日時の第１希望日を入力してください
+      </p>
+      <label for="rendou" class="c-label">
         家賃の上限
-      </h2>
-      <h2 class="c-title">
+      </label>
+      <div class="p-form__box">
+        <input id="name" type="number" placeholder="10" name="text" class="c-input__sub">
+
+        万円
+      </div>
+
+      <label for="rendou" class="c-label">
         お部屋の広さ
-      </h2>
-      <h2 class="c-title">
+      </label>
+      <div class="p-form__box">
+        <input id="name" type="number" placeholder="42.35" name="text" class="c-input__sub">
+
+        m<sup>2</sup>
+      </div>
+
+
+      <label for="rendou" class="c-label">
         ご希望のエリア・路線・駅名
-      </h2>
-      <label for="rendou"></label> <input id="name" type="text" name="text" class="c-form__input"
-        placeholder="JR山手線 渋谷駅" required="required">
-      <h2 class="c-title">
-        お問い合わせ内容
-      </h2>
-      <label for="rendou"></label> <textarea id="name" type="text" name="text" class="c-form__input"
-      placeholder="IRIS2021" required="required">
-      <h2 class="c-title">
+      </label>
+      <input id="name" type="text" name="text" class="c-input" placeholder="JR山手線 渋谷駅" required="required">
+
+      <label for="comment" class="c-label">
+        お問合せ
+      </label>
+      <textarea id="comment" name="comment"
+        placeholder="テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますトが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります"
+        class="c-input__textarea">
+      </textarea>
+      <label for="rendou" class="c-label">
         キャンペーンコード
-      </h2>
-     
+      </label>
+      <input id="name" type="text" name="name" class="c-input" placeholder="IRIS2021" required="必須">
+
+      <label for="rendou" class="c-label">
+        IRISをどこで知りましたか？
+      </label>
+      <select name="selectbox" class="c-select">
+        <option value="項目1">検索（Google等）
+        </option>
+        <option value="項目2">SNS（Twitter等）
+        </option>
+        <option value="項目3">知人から
+        </option>
+        <option value="項目4">アプリ（9monsters等の広告）
+        </option>
+        <option value="項目4">イベント（レインボープライド等）</option>
+      </select>
+
+
+
+      <label for="comment" class="c-label">利用規約</label>
+      <textarea id="comment" name="comment"
+        placeholder="テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります"
+        class="c-input__textarea " style="background-color: #F8F8F8;"></textarea>
+
+      <!-- <input id="check" type="checkbox" name="checkbox" value="利用規約に同意します"><label for="check" class="checkbox">
+        <span class="checkbox-parts">
+          チェックボックス01
+
+        </span>
+      </label> -->
+      <div class="p-check">
+
+        <label class="p-check__label">
+          <input type="checkbox" name="checkbox[]" class="checkbox-input">
+          <span class="checkbox-parts">利用規約に同意します</span>
+        </label><br>
+        <p>
+          利用規約に同意が必要です
+        </p>
+      </div>
+      <button class="c-button">
+        入力内容を確認する
+      </button>
+    </div>
   </main>
 
 </boby>
