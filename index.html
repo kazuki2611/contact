@@ -56,41 +56,104 @@
 
         <input id="name" type="text" name="name" class="c-input" placeholder="田中太朗" required="必須">
       </div>
-      
-      <p>
+
+      <p class="p-form__text">
         お名前を入力してください
       </p>
 
-      <label for="rendou" class="c-label">
-        電話番号
-      </label>
-      <div class="p-input">
+      <div class="p-form__box">
+        <div class="p-form__box__wrap">
+          <label for="rendou" class="c-label">
+            電話番号
+          </label>
+          <div class="p-input">
 
-        <input id="name" type="tel" name="tel" class="c-input" placeholder="090-1234-5678" required>
-      </div>
-      <p>
-        電話番号を入力してください
-      </p>
-      <label for="rendou" class="c-label">
-        メールアドレス</label>
-      <div class="p-input">
+            <input id="name" type="tel" name="tel" class="c-input" placeholder="090-1234-5678" required>
+          </div>
+          <p class="p-form__text">
+            電話番号を入力してください
+          </p>
 
-        <input id="name" type="email" placeholder="example@mail.com" name="email" class="c-input">
+        </div>
+        <div class="p-form__box__wrap">
+          <label for="rendou" class="c-label">
+            メールアドレス</label>
+          <div class="p-input">
+
+            <input id="name" type="email" placeholder="example@mail.com" name="email" class="c-input">
+          </div>
+          <p class="p-form__text">
+            メールアドレスを入力してください
+          </p>
+        </div>
+
       </div>
-      <p>
-        メールアドレスを入力してください
-      </p>
-      <h2 class="c-title">
+
+
+      <label for="rendou" class="c-label u-margin">
         折り返しのご連絡希望日時
-      </h2>
+      </label>
+      <div class="p-form__box">
+        <div class="p-form__box__inner">
 
-      <p>
+          <span>
+            第１希望日
+          </span>
+          <div class="p-input u-positon">
+            <select name="selectbox" class="c-select">
+              <option value="項目1">2021年10月18日 13時
+              </option>
+
+            </select>
+
+
+
+          </div>
+        </div>
+        <div class="p-form__box__inner ">
+          <span>
+            第２希望日
+          </span>
+          <div class="p-input u-positon">
+            <select name="selectbox" class="c-select">
+              <option value="項目1">2021年10月18日 13時
+              </option>
+
+            </select>
+
+          </div>
+        </div>
+        <div class="p-form__box__inner">
+          <span>
+            第３希望日
+          </span>
+          <div class="p-input u-positon">
+            <select name="selectbox" class="c-select">
+              <option value="項目1">2021年10月18日 13時
+              </option>
+
+            </select>
+
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <p class="p-form__wrap__text1">
+        お電話でお探しの物件について詳細を伺います。<br>
+        ※直近の日時をご指定いただいた場合、ご希望に添えないことがあります。※毎週火曜日・水曜日は定休日となっております。
+      </p>
+      <p class="p-form__wrap__text2">
         折り返しのご連絡希望日時の第１希望日を入力してください
       </p>
+
       <label for="rendou" class="c-label">
         家賃の上限
       </label>
-      <div class="p-form__box">
+      <div class="p-form__inner">
         <input id="name" type="number" placeholder="10" name="text" class="c-input__sub">
 
         万円
@@ -102,7 +165,7 @@
       <div class="p-form__box">
         <input id="name" type="number" placeholder="42.35" name="text" class="c-input__sub">
 
-        m<sup>2</sup>
+        m<sup>2</sup>以上
       </div>
 
 
@@ -112,18 +175,18 @@
       <input id="name" type="text" name="text" class="c-input" placeholder="JR山手線 渋谷駅" required="required">
 
       <label for="comment" class="c-label">
-        お問合せ
+        お問い合わせ内容
       </label>
       <textarea id="comment" name="comment"
         placeholder="テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますトが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります"
         class="c-input__textarea">
       </textarea>
-      <label for="rendou" class="c-label">
+      <label for="rendou" class="c-label u-margin__2">
         キャンペーンコード
       </label>
       <input id="name" type="text" name="name" class="c-input" placeholder="IRIS2021" required="必須">
 
-      <label for="rendou" class="c-label">
+      <label for="rendou" class="c-label u-margin__3">
         IRISをどこで知りましたか？
       </label>
       <select name="selectbox" class="c-select">
@@ -140,7 +203,7 @@
 
 
 
-      <label for="comment" class="c-label">利用規約</label>
+      <label for="comment" class="c-label u-margin__4">利用規約</label>
       <textarea id="comment" name="comment"
         placeholder="テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります"
         class="c-input__textarea " style="background-color: #F8F8F8;"></textarea>
@@ -156,7 +219,7 @@
         <label class="p-check__label">
           <input type="checkbox" name="checkbox[]" class="checkbox-input">
           <span class="checkbox-parts">利用規約に同意します</span>
-        </label><br>
+        </label>
         <p>
           利用規約に同意が必要です
         </p>
@@ -164,6 +227,35 @@
       <button class="c-button">
         入力内容を確認する
       </button>
+      <div class="p-breadcrumb">
+        <ol class="breadcrumb__list">
+          <li class="breadcrumb__item">
+            <a href="#">TOP</a>
+          </li>
+          <li class="breadcrumb__item">
+            <a href="#">お部屋探し</a>
+          </li>
+          <li class="breadcrumb__item">
+            <a href="#">賃貸</a>
+          </li>
+          <li class="breadcrumb__item">
+            <a href="#">東京都</a>
+          </li>
+          <li class="breadcrumb__item">
+            <a href="#">新宿区</a>
+          </li>
+          <li class="breadcrumb__item">
+            <a href="#">新宿区の物件一覧</a>
+          </li>
+          <li class="breadcrumb__item">
+            <a href="#">物件名物件名</a>
+          </li>
+          <li class="breadcrumb__item">
+            <a href="#">お問い合わせ</a>
+          </li>
+        </ol>
+      </div>
+
     </div>
   </main>
 

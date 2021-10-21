@@ -5,17 +5,56 @@
 @import "foundation/base";
 
 .p-form {
-  width: 90%;
+  width: 87%;
   margin: 0 auto;
   @include breakpoint(pc) {
     max-width: 800px;
   }
-  p {
+  &__text {
     color: #e30a0a;
     padding-top: 10px;
     font-size: 14px;
+    line-height: 1.21;
+    @include breakpoint(pc) {
+      padding-top: 12px;
+    }
   }
+
   &__box {
+    sup {
+      font-size: 50%;
+    }
+    @include breakpoint(pc) {
+      display: flex;
+      gap: 40px;
+    }
+    &__inner {
+      @include breakpoint(pc) {
+        width: 250px;
+      }
+      span {
+        line-height: 1.1;
+        font-size: 12px;
+      }
+      .p-inpur {
+        margin-top: 10px;
+
+        @include breakpoint(pc) {
+          font-size: 14px;
+        }
+      }
+      .c-select {
+        margin-top: 10px;
+        @include breakpoint(pc) {
+          font-size: 14px;
+        }
+      }
+    }
+    &__wrap {
+      margin-top: 42px;
+    }
+  }
+  &__inner {
     display: flex;
     align-items: center;
     color: $text-color;
@@ -26,12 +65,47 @@
       list-style: 1.1;
     }
   }
+  &__wrap {
+    @include breakpoint(pc) {
+      display: flex;
+    }
+    span {
+      font-size: 12px;
+      line-height: 1, 1;
+      color: $text-color;
+      @include breakpoint(pc) {
+        font-size: 14px;
+      }
+    }
+    .c-select {
+      margin-bottom: 19px;
+      margin-top: 10px;
+    }
+    &__text1 {
+      color: #969696;
+      font-size: 12px;
+
+      margin-top: 8px;
+      @include breakpoint(pc) {
+        margin-top: 8px;
+      }
+    }
+    &__text2 {
+      color: #e30a0a;
+      padding-top: 10px;
+      font-size: 14px;
+      line-height: 1.1;
+      @include breakpoint(pc) {
+        margin-top: 4px;
+      }
+    }
+  }
   .c-form__text {
     margin-top: 40px;
     text-align: center;
     color: $text-color;
     font-size: 14px;
-    line-height: 1.2;
+
     margin-bottom: 43px;
     @include breakpoint(pc) {
       margin-bottom: 87px;
@@ -52,16 +126,25 @@
     }
   }
   &__service {
-    padding-top: 24px;
-    padding-left: 24px;
+    margin-top: 11px;
+    padding-top: 16px;
+    padding-left: 12px;
+    padding-bottom: 12px;
     display: flex;
     background-color: #f8f8f8;
+    width: 327px;
+    img {
+      width: 80px;
+      height: 80px;
+      object-fit: cover;
+    }
     &__wrap {
       margin-left: 16px;
-      margin-top: 20px;
       h3 {
         margin-top: 10px;
         line-height: 1.2;
+        font-size: 14px;
+        font-weight: 500;
         @include breakpoint(pc) {
           margin-top: 15px;
         }
@@ -70,6 +153,7 @@
         margin-top: 6px;
         color: #707070;
         line-height: 1.1;
+        font-size: 12px;
         @include breakpoint(pc) {
           margin-top: 15px;
         }
@@ -77,19 +161,28 @@
     }
   }
   .c-form__part {
-    padding: 6px 8px 4px 8px;
+    text-align: center;
+    align-items: center;
+    padding-top: 2px;
     color: $base-color;
+    width: 86px;
+    height: 20px;
+    line-height: 1, 2;
     border: solid 1px $base-color;
+    margin-top: 8px;
+    display: inline-block;
+    font-size: 10px;
   }
   .c-title {
-    font-size: 11px;
-    margin: 0 0 30px;
-    width: 300px;
-    height: 40px;
-    line-height: 40px;
+    font-size: 18px;
+    font-weight: 500;
+    // width: 300px;
+    // height: 40px;
+    line-height: 1.22;
     box-sizing: border-box;
     position: relative;
     padding-left: 10px;
+    color: $text-color;
     @include breakpoint(pc) {
       font-size: 22px;
     }
@@ -98,9 +191,9 @@
       display: block;
       position: absolute;
       left: 0;
-      top: 5px;
+      top: -2px;
       width: 3px;
-      height: 32px;
+      height: 26px;
       border-radius: 2px;
       background-color: $text-color;
     }
@@ -113,28 +206,36 @@
     position: absolute;
     display: block;
     color: #e30a0a;
-    top: 25%;
-    right: 10%;
+    top: 30%;
+    right: 5%;
+    font-weight: bold;
+    font-size: 10px;
+    @include breakpoint(pc) {
+      font-size: 10px;
+      top: 35%;
+    }
   }
 }
 .c-input {
-  padding: 0 10px;
+  padding-left: 16px;
   position: relative;
-  border-radius: 3px;
+  border-radius: 5px;
   width: 100%;
   background-color: #fff9ea;
   display: block;
-  height: 43px;
- 
-  &__sub {
-    margin: 8px;
+  height: 56px;
+  &::placeholder {
+    font-size: 16px;
+    font-family: "Lato";
   }
+
   &__textarea {
-    padding: 0 10px;
+    padding: 16px 10px 0 10px;
     height: 487px;
     width: 100%;
     background-color: #fff9ea;
-
+    font-size: 14px;
+    line-height: 2;
     @include breakpoint(pc) {
       height: 197px;
     }
@@ -146,25 +247,32 @@
     width: 99px;
     height: 56px;
     border-radius: 5px;
+    margin-right: 8px;
+    &::placeholder {
+      font-size: 16px;
+      font-family: "Lato";
+    }
   }
 }
 ::placeholder {
-  color:$text-color;
+  color: $text-color;
+  font-size: 16px;
+  line-height: 1.18;
 }
 .c-label {
   font-size: 18px;
   margin-bottom: 8px;
-  width: 300px;
+  // width: 300px;
   align-items: center;
   display: flex;
-  height: 40px;
+  height: 26px;
   line-height: 1.2;
   box-sizing: border-box;
   position: relative;
   padding-left: 10px;
   font-family: "Noto Sans JP";
   font-weight: 500;
-  margin-top: 42px;
+  margin-top: 44px;
   @include breakpoint(pc) {
     font-size: 22px;
     margin-bottom: 11px;
@@ -177,9 +285,9 @@
     left: 0;
 
     width: 3px;
-    height: 32px;
+    height: 26px;
     border-radius: 2px;
-    background-color: $text-color;
+    background-color: #444444;
   }
 }
 .p-check {
@@ -187,6 +295,11 @@
   align-items: center;
   height: 25px;
   margin-top: 24px;
+  p {
+    color: #e30a0a;
+    font-size: 14px;
+    margin-top: 12px;
+  }
   @include breakpoint(pc) {
     margin-top: 16px;
   }
@@ -240,6 +353,58 @@
   -moz-appearance: menulist;
   -webkit-appearance: menulist;
   @extend.c-input;
+  padding-left: 14px;
+  color: $text-color;
+  font-size: 16px;
+  line-height: 1, 1;
+  height: 56px;
+  font-family: "lato";
+  &::after {
+    right: 20%;
+  }
+}
+.u-margin {
+  margin-bottom: 0;
+  &__2 {
+    margin-top: 40px;
+  }
+  &__3 {
+    margin-top: 38px;
+  }
+  &__4 {
+    margin-top: 31px;
+  }
+}
+.u-positon {
+  &::after {
+    right: 20%;
+  }
+}
+.p-breadcrumb {
+ text-align: center;
+  margin: 47px auto 42px auto;
+  width: 95%;
+}
+.breadcrumb__list {
+  width: 100%;
+  display: flex;
 
-color: $text-color;
+  list-style: none;
+  flex-wrap: wrap;
+}
+.breadcrumb__item {
+  a {
+    padding-right: 5px;
+    font-size: 12px;
+    color: #ff8a26;
+  }
+  &::after {
+    content: ">";
+    padding-right: 5px;
+    display: inline-block;
+  }
+
+  &:last-child::after {
+    display: none;
+  }
 }
