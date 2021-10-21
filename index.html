@@ -27,8 +27,8 @@
 
     <div class="p-form">
       <p class="c-form__text">
-        お部屋探しについてのお問い合わせフォームです。<br>
-        引越し希望エリアや家賃など、お部屋探しの条件が具体的にお決まりの場合は詳細をご記入ください。
+        お部屋探しについてのお問い合わせフォームです。<br class="sp-br">
+        引越し希望エリアや家賃など、<br class="pc-br">お部屋探しの条件が<br class="sp-br">具体的にお決まりの場合は詳細をご記入ください。
       </p>
       <h2 class="c-title">
         お問い合わせする物件
@@ -49,7 +49,7 @@
       </div>
       <div class="p-form__label"></div>
 
-      <label for="rendou" class="c-label">
+      <label for="rendou" class="c-label u-margin">
         お名前
       </label>
       <div class="p-input">
@@ -63,12 +63,12 @@
 
       <div class="p-form__box">
         <div class="p-form__box__wrap">
-          <label for="rendou" class="c-label">
+          <label for="rendou" class="c-label u-margin__4">
             電話番号
           </label>
           <div class="p-input">
 
-            <input id="name" type="tel" name="tel" class="c-input" placeholder="090-1234-5678" required>
+            <input id="name" type="tel" name="tel" class="c-input " placeholder="090-1234-5678" required>
           </div>
           <p class="p-form__text">
             電話番号を入力してください
@@ -76,7 +76,7 @@
 
         </div>
         <div class="p-form__box__wrap">
-          <label for="rendou" class="c-label">
+          <label for="rendou" class="c-label u-margin__6">
             メールアドレス</label>
           <div class="p-input">
 
@@ -90,7 +90,7 @@
       </div>
 
 
-      <label for="rendou" class="c-label u-margin">
+      <label for="rendou" class="c-label u-margin__7">
         折り返しのご連絡希望日時
       </label>
       <div class="p-form__box">
@@ -114,7 +114,7 @@
           <span>
             第２希望日
           </span>
-          <div class="p-input u-positon">
+          <div class="p-input u-positon__2">
             <select name="selectbox" class="c-select">
               <option value="項目1">2021年10月18日 13時
               </option>
@@ -127,7 +127,7 @@
           <span>
             第３希望日
           </span>
-          <div class="p-input u-positon">
+          <div class="p-input u-positon__2">
             <select name="selectbox" class="c-select">
               <option value="項目1">2021年10月18日 13時
               </option>
@@ -159,22 +159,23 @@
         万円
       </div>
 
-      <label for="rendou" class="c-label">
+      <label for="rendou" class="c-label u-margin">
         お部屋の広さ
       </label>
-      <div class="p-form__box">
+      <div class="p-form__child">
+      
         <input id="name" type="number" placeholder="42.35" name="text" class="c-input__sub">
 
         m<sup>2</sup>以上
       </div>
 
 
-      <label for="rendou" class="c-label">
+      <label for="rendou" class="c-label u-margin__5">
         ご希望のエリア・路線・駅名
       </label>
       <input id="name" type="text" name="text" class="c-input" placeholder="JR山手線 渋谷駅" required="required">
 
-      <label for="comment" class="c-label">
+      <label for="comment" class="c-label u-margin__9">
         お問い合わせ内容
       </label>
       <textarea id="comment" name="comment"
@@ -189,7 +190,7 @@
       <label for="rendou" class="c-label u-margin__3">
         IRISをどこで知りましたか？
       </label>
-      <select name="selectbox" class="c-select">
+      <select name="selectbox" class="c-select u-width">
         <option value="項目1">検索（Google等）
         </option>
         <option value="項目2">SNS（Twitter等）
@@ -203,7 +204,7 @@
 
 
 
-      <label for="comment" class="c-label u-margin__4">利用規約</label>
+      <label for="comment" class="c-label u-margin__8">利用規約</label>
       <textarea id="comment" name="comment"
         placeholder="テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります"
         class="c-input__textarea " style="background-color: #F8F8F8;"></textarea>
@@ -223,10 +224,10 @@
         <p>
           利用規約に同意が必要です
         </p>
+        <button class="c-button">
+          入力内容を確認する
+        </button>
       </div>
-      <button class="c-button">
-        入力内容を確認する
-      </button>
       <div class="p-breadcrumb">
         <ol class="breadcrumb__list">
           <li class="breadcrumb__item">
