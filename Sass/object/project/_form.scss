@@ -1,0 +1,253 @@
+
+.p-form {
+  width: 87%;
+  margin: 0 auto;
+  @include breakpoint(pc) {
+    max-width: 800px;
+  }
+  &__text {
+    color: #e30a0a;
+    padding-top: 10px;
+    font-size: 14px;
+    line-height: 1.21;
+    @include breakpoint(pc) {
+      padding-top: 12px;
+    }
+  }
+
+  &__box {
+    sup {
+      font-size: 50%;
+    }
+    @include breakpoint(pc) {
+      display: flex;
+      gap: 24px;
+    }
+    &__inner {
+      .c-text {
+        line-height: 1.1;
+        font-size: 12px;
+        color: $text-color;
+        @include breakpoint(pc) {
+          font-size: 14px;
+          margin-top: 6px;
+          margin-bottom: 10px;
+        }
+      }
+      @include breakpoint(pc) {
+        width: 250px;
+      }
+      span {
+        display: inline-block;
+        line-height: 1;
+        font-size: 12px;
+        color: $text-color;
+        @include breakpoint(pc) {
+          font-size: 14px;
+        }
+      }
+      .p-inpur {
+        margin-top: 10px;
+
+        @include breakpoint(pc) {
+          font-size: 14px;
+        }
+      }
+      .c-select {
+        margin-top: 10px;
+        position: relative;
+        @include breakpoint(pc) {
+          font-size: 14px;
+          width: 250px;
+          margin-top: 0;
+        }
+      }
+    }
+    &__wrap {
+      margin-top: 42px;
+      @include breakpoint(pc) {
+        margin-top: 0;
+      }
+    }
+  }
+  &__inner {
+    display: flex;
+    align-items: center;
+    color: $text-color;
+
+    sup {
+      color: $text-color;
+      font-size: "Lato";
+      list-style: 1.1;
+    }
+  }
+  &__wrap {
+    @include breakpoint(pc) {
+      display: flex;
+    }
+    span {
+      font-size: 12px;
+      line-height: 1, 1;
+      color: $text-color;
+      @include breakpoint(pc) {
+        font-size: 14px;
+      }
+    }
+    .c-select {
+      margin-bottom: 19px;
+      margin-top: 10px;
+    }
+    &__text1 {
+      color: #969696;
+      font-size: 12px;
+
+      margin-top: 8px;
+      @include breakpoint(pc) {
+        margin-top: 8px;
+      }
+    }
+    &__text2 {
+      color: #e30a0a;
+      padding-top: 10px;
+      font-size: 14px;
+      line-height: 1.1;
+      @include breakpoint(pc) {
+        margin-top: 4px;
+      }
+    }
+  }
+  .c-form__text {
+    margin-top: 40px;
+    text-align: center;
+    color: $text-color;
+    font-size: 14px;
+    .pc-br {
+      display: none;
+    }
+    margin-bottom: 43px;
+    @include breakpoint(pc) {
+      .sp-br {
+        display: none;
+      }
+      .pc-br {
+        display: block;
+      }
+      font-size: 16px;
+      margin-top: 80px;
+    }
+
+    @include breakpoint(pc) {
+      margin-bottom: 87px;
+    }
+  }
+  .c-button {
+    width: 100%;
+    height: 50px;
+    border-radius: 25px;
+    margin-top: 68px;
+    margin: 68px auto 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include breakpoint(pc) {
+      width: 300px;
+      margin-top: 108px;
+    }
+  }
+  &__service {
+    margin-top: 11px;
+    padding-top: 16px;
+    padding-left: 12px;
+    padding-bottom: 12px;
+    display: flex;
+    background-color: #f8f8f8;
+    width: 327px;
+    @include breakpoint(pc) {
+      margin-top: 16px;
+      padding-left: 24px;
+      padding-top: 24px;
+      padding-bottom: 24px;
+      width: 100%;
+    }
+    img {
+      width: 80px;
+      height: 80px;
+      object-fit: cover;
+      @include breakpoint(pc) {
+        width: 133px;
+        height: 133px;
+      }
+    }
+    &__wrap {
+      margin-left: 16px;
+      h3 {
+        margin-top: 10px;
+        line-height: 1.2;
+        font-size: 14px;
+        font-weight: 500;
+        @include breakpoint(pc) {
+          margin-top: 15px;
+          font-size: 22px;
+        }
+      }
+      .c-form {
+        margin-top: 6px;
+        color: #707070;
+        line-height: 1.1;
+        font-size: 12px;
+        @include breakpoint(pc) {
+          margin-top: 16px;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+  .c-form__part {
+    text-align: center;
+    align-items: center;
+    padding-top: 2px;
+    color: $base-color;
+    width: 86px;
+    background-color: #ffffff;
+    height: 20px;
+    line-height: 1, 2;
+    border: solid 1px $base-color;
+    margin-top: 8px;
+    display: inline-block;
+    font-size: 10px;
+    @include breakpoint(pc) {
+      font-size: 12px;
+      width: 116px;
+      height: 23px;
+      margin-top: 19px;
+    }
+  }
+  .c-title {
+    font-size: 18px;
+    font-weight: 500;
+    // width: 300px;
+    // height: 40px;
+    line-height: 1.22;
+    box-sizing: border-box;
+    position: relative;
+    padding-left: 10px;
+    color: $text-color;
+    @include breakpoint(pc) {
+      font-size: 22px;
+    }
+    &:before {
+      content: "";
+      display: block;
+      position: absolute;
+      left: 0;
+
+      width: 3px;
+      height: 26px;
+      border-radius: 2px;
+      background-color: $text-color;
+    }
+  }
+  &__child {
+    color: $text-color;
+  }
+}

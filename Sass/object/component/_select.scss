@@ -1,0 +1,15 @@
+.c-select {
+  @extend.c-input;
+  padding-left: 14px;
+  color: $text-color;
+  font-size: 16px;
+  line-height: 1, 1;
+  height: 56px;
+  font-family: "lato";
+  @include breakpoint(pc) {
+    height: 52px;
+  }
+  &::after {
+    right: 20%;
+  }
+}

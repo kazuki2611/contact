@@ -1,0 +1,7 @@
+.u-width {
+  width: 327px;
+
+  @include breakpoint(pc) {
+    width: 250px;
+  }
+}

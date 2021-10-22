@@ -759,12 +759,6 @@ html.is-open {
   font-family: "Lato";
 }
 
-::placeholder {
-  color: #444444;
-  font-size: 16px;
-  line-height: 1.18;
-}
-
 .c-label {
   font-size: 18px;
   margin-bottom: 8px;
@@ -1092,6 +1086,10 @@ html.is-open {
   }
 }
 
+.u-width {
+  width: 327px;
+}
+
 @media (min-width: 960px) {
   .u-width {
     width: 250px;
@@ -1353,9 +1351,5 @@ html.is-open {
   .p-content__inner {
     width: 235px;
   }
-}
-
-.u-width {
-  width: 327px;
 }
 /*# sourceMappingURL=styles.css.map */

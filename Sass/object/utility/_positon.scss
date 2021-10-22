@@ -1,0 +1,13 @@
+.u-positon {
+  &__2 {
+    &::after {
+      display: none;
+    }
+  }
+  &::after {
+    right: 20%;
+    @include breakpoint(pc) {
+      right: 45%;
+    }
+  }
+}

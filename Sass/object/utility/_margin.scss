@@ -1,0 +1,61 @@
+
+.u-margin {
+  // margin-top: 48px;
+  margin-top: 44px;
+  @include breakpoint(pc) {
+    margin-top: 39px;
+  }
+  &__2 {
+    margin-top: 30px;
+    @include breakpoint(pc) {
+      margin-top: 42px;
+    }
+  }
+  &__3 {
+    margin-top: 38px;
+    @include breakpoint(pc) {
+      margin-top: 42px;
+    }
+  }
+  &__4 {
+    margin-top: 31px;
+    // margin-bottom: 0;
+    @include breakpoint(pc) {
+      margin-top: 60px;
+    }
+  }
+  &__5 {
+    margin-top: 40px;
+    @include breakpoint(pc) {
+      margin-top: 42px;
+    }
+  }
+  &__6 {
+    // margin-top: 38px;
+    @include breakpoint(pc) {
+      margin-top: 60px;
+    }
+  }
+  &__7 {
+    @include breakpoint(pc) {
+    }
+  }
+  &__8 {
+    margin-top: 31px;
+    @include breakpoint(pc) {
+      margin-top: 42px;
+    }
+  }
+  &__9 {
+    margin-top: 40px;
+    @include breakpoint(pc) {
+      margin-top: 58px;
+    }
+  }
+  &__10 {
+    margin-top: 19px;
+    @include breakpoint(pc) {
+      margin-top: 0;
+    }
+  }
+}

@@ -1,0 +1,31 @@
+.p-breadcrumb {
+  text-align: center;
+  margin: 47px auto 42px auto;
+  width: 95%;
+}
+.breadcrumb__list {
+  width: 100%;
+  display: flex;
+
+  list-style: none;
+  flex-wrap: wrap;
+  @include breakpoint(pc) {
+    justify-content: center;
+  }
+}
+.breadcrumb__item {
+  a {
+    padding-right: 5px;
+    font-size: 12px;
+    color: #ff8a26;
+  }
+  &::after {
+    content: ">";
+    padding-right: 5px;
+    display: inline-block;
+  }
+
+  &:last-child::after {
+    display: none;
+  }
+}
