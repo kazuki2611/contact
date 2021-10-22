@@ -30,12 +30,10 @@
     }
     &__inner {
       .c-text {
-        
         line-height: 1.1;
         font-size: 12px;
         color: $text-color;
         @include breakpoint(pc) {
-         
           font-size: 14px;
           margin-top: 6px;
           margin-bottom: 10px;
@@ -208,7 +206,6 @@
         }
       }
     }
-    
   }
   .c-form__part {
     text-align: center;
@@ -216,7 +213,7 @@
     padding-top: 2px;
     color: $base-color;
     width: 86px;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     height: 20px;
     line-height: 1, 2;
     border: solid 1px $base-color;
@@ -248,7 +245,7 @@
       display: block;
       position: absolute;
       left: 0;
-      top: -2px;
+
       width: 3px;
       height: 26px;
       border-radius: 2px;
@@ -261,7 +258,7 @@
 }
 .p-input {
   position: relative;
-  
+
   @include breakpoint(pc) {
     width: 388px;
     // width: 250px;
@@ -283,12 +280,10 @@
   img {
     position: absolute;
     top: 24px;
-    left:299px;
-    @include breakpoint (pc) {
-      left:222px;
-      
+    right: 16px;
+    @include breakpoint(pc) {
+      left: 222px;
     }
-
   }
 }
 .c-input {
@@ -300,10 +295,10 @@
   display: block;
   height: 56px;
   @include breakpoint(pc) {
-    width:388px ;
+    width: 388px;
     // padding: 10px 10px 0 14px;
   }
-  
+
   &::placeholder {
     font-size: 16px;
     font-family: "Lato";
@@ -387,7 +382,65 @@
   text-align: center;
   align-items: center;
   height: 100%;
-  margin-top: 24px;
+  margin: 24px auto 24px auto;
+  width: 327px;
+
+  @include breakpoint(pc) {
+    margin-top: 0;
+  }
+  &__text {
+    text-align: center;
+    align-items: center;
+    height: 100%;
+    // margin: 24px auto 24px auto;
+    margin: 0 auto;
+    width: 327px;
+    .c-button {
+      width: 100%;
+      border-radius: 25px;
+      height: 50px;
+      color: #fff;
+      font-size: 16px;
+      font-weight: 500;
+      margin-top: 40px;
+      position: relative;
+      background: linear-gradient(60deg, #ff8a00 0%, #ffbd27 100%);
+      @include breakpoint (pc) {
+        margin-top:0;
+
+      }
+      
+      &__2 {
+        font-size: 16px;
+        font-weight: 500;
+        width: 100%;
+        border-radius: 25px;
+        height: 50px;
+        background-color: #fff;
+        border: solid 1px #ff8a00;
+        color: #ff8a00;
+        position: relative;
+        margin-top: 16px;
+        @include breakpoint(pc) {
+          width: 300px;
+        }
+        img {
+          position: absolute;
+          top: 45%;
+          right: 10%;
+        }
+      }
+      @include breakpoint(pc) {
+        margin-top: 71px;
+        width: 300px;
+      }
+      img {
+        position: absolute;
+        top: 45%;
+        right: 10%;
+      }
+    }
+  }
   p {
     color: #e30a0a;
     font-size: 14px;
@@ -402,17 +455,48 @@
     justify-content: center;
     align-items: center;
   }
+  &__box {
+    height: 92px;
+  }
   .c-button {
+    width: 100%;
+    border-radius: 25px;
+    height: 50px;
     color: #fff;
     font-size: 16px;
     font-weight: 500;
-margin-top: 42px;
+    // margin-top: 42px;
+    position: relative;
     background: linear-gradient(60deg, #ff8a00 0%, #ffbd27 100%);
+    &__2 {
+      font-size: 16px;
+      font-weight: 500;
+      width: 100%;
+      border-radius: 25px;
+      height: 50px;
+      background-color: #fff;
+      border: solid 1px #ff8a00;
+      color: #ff8a00;
+      position: relative;
+      margin-top: 16px;
+      img {
+        position: absolute;
+        top: 45%;
+        right: 10%;
+      }
+    }
     @include breakpoint(pc) {
       margin-top: 82px;
+      width: 300px;
     }
-     }
+    img {
+      position: absolute;
+      top: 45%;
+      right: 10%;
+    }
+  }
 }
+
 .checkbox-input {
   display: none;
 }
@@ -424,7 +508,6 @@ margin-top: 42px;
   align-items: center;
   line-height: 1.8;
   @include breakpoint(pc) {
-  
   }
 }
 .checkbox-parts::before {
@@ -452,7 +535,6 @@ margin-top: 42px;
 }
 
 .c-select {
-  
   @extend.c-input;
   padding-left: 14px;
   color: $text-color;
@@ -460,7 +542,7 @@ margin-top: 42px;
   line-height: 1, 1;
   height: 56px;
   font-family: "lato";
-  @include breakpoint (pc) {
+  @include breakpoint(pc) {
     height: 52px;
   }
   &::after {
@@ -506,43 +588,41 @@ margin-top: 42px;
   }
   &__7 {
     @include breakpoint(pc) {
-    
     }
   }
   &__8 {
     margin-top: 31px;
-    @include breakpoint (pc) {
-
+    @include breakpoint(pc) {
       margin-top: 42px;
     }
   }
   &__9 {
     margin-top: 40px;
-    @include breakpoint (pc) {
+    @include breakpoint(pc) {
       margin-top: 58px;
     }
   }
   &__10 {
     margin-top: 19px;
-    @include breakpoint (pc) {
+    @include breakpoint(pc) {
       margin-top: 0;
     }
   }
 }
 .u-width {
-  @include breakpoint (pc) {
+  @include breakpoint(pc) {
     width: 250px;
   }
 }
 .u-positon {
   &__2 {
-  &::after{
-    display: none;
-  }
+    &::after {
+      display: none;
+    }
   }
   &::after {
     right: 20%;
-    @include breakpoint (pc) {
+    @include breakpoint(pc) {
       right: 45%;
     }
   }
@@ -558,7 +638,7 @@ margin-top: 42px;
 
   list-style: none;
   flex-wrap: wrap;
-  @include breakpoint (pc) {
+  @include breakpoint(pc) {
     justify-content: center;
   }
 }
@@ -582,15 +662,187 @@ margin-top: 42px;
   width: 100%;
   height: 487px;
   padding: 16px 16px 0 16px;
-  background-color: #F8F8F8;
+  background-color: #f8f8f8;
   margin-top: 8px;
-  overflow:auto; 
+  overflow: auto;
   p {
     letter-spacing: 0.035em;
     line-height: 2;
     color: $text-color;
   }
-  @include breakpoint (pc) {
+  @include breakpoint(pc) {
     height: 197px;
   }
+}
+.p-form__check {
+  text-align: center;
+  width: 87%;
+  margin: 0 auto;
+  @include breakpoint(pc) {
+    max-width: 800px;
+  }
+  .c-check {
+    font-family: "Noto Sans JP ";
+    font-size: 14px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    line-height: 1.2;
+    @include breakpoint(pc) {
+      font-size: 16px;
+      margin-top: 80px;
+      margin-bottom: 88px;
+    }
+  }
+  &__wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      width: 42px;
+      height: 42px;
+      object-fit: cover;
+    }
+    p {
+      font-size: 14px;
+      padding-left: 14px;
+    }
+  }
+}
+.p-table {
+  // font-family: "Noto Sans JP";
+
+  width: 325px;
+  margin: 0 auto;
+  // border: solid 1px #707070;
+  border: 1px solid #707070;
+  border-top: none;
+  border-collapse: collapse;
+  color: $text-color;
+  font-weight: 400;
+
+  // text-align: left;
+
+  .p-box {
+    margin-top: 0;
+    padding: 16px 16px 0 16px;
+    line-height: 1.8;
+    height: 442px;
+  }
+  @include breakpoint(pc) {
+    margin-top: 30px;
+    padding: 10px 20px 0 20px;
+    max-width: 800px;
+    width: 8000px;
+    margin: 0 auto;
+
+    margin-top: 50px;
+  }
+
+  th {
+    font-family: "Noto Sans JP ";
+    width: 325px;
+    font-weight: 400;
+    height: 52px;
+    border-bottom: solid 1px #707070;
+    width: 100%;
+    padding: 20px 0 17px 0;
+    background-color: #f8f8f8;
+    line-height: 1.2;
+    display: block;
+    font-size: 14px;
+    border-top: solid 1px #707070;
+    @include breakpoint(pc) {
+      
+      display: table-cell;
+      width: 247px;
+      text-align: center;
+      // padding: 28px 0px 27px 30px;
+    }
+  }
+  .c-table {
+    // td
+    width: 325px;
+
+    padding: 20px 0 0 0;
+    // border-bottom: solid 1px #707070;
+    display: inline-block;
+    text-align: center;
+    height: 52px;
+    line-height: 1.5;
+    font-size: 14px;
+    font-weight: 400;
+
+    @include breakpoint(pc) {
+      padding-top: 0;
+      border: solid 1px #707070;
+      text-align: initial;
+      display: table-cell;
+      text-align: center;
+      // padding: 28px 106px 27px 30px;
+      width: 68%;
+
+      // padding: 28px 405px 27px 30px;
+    }
+  }
+  .u-heght {
+    height: 73px;
+    &__2 {
+      height: 92px;
+    }
+    &__3 {
+      height: 442px;
+      padding: 16px 16px 0 16px;
+      margin: 0;
+      @include breakpoint(pc) {
+        height: 212px;
+        padding: 17px 15px 0 15px;
+      }
+    }
+    &__4 {
+      margin: 0;
+      width: auto;
+      line-height: 1.85;
+      @include breakpoint(pc) {
+        width: 100%;
+        height: 212px;
+        overflow: auto;
+      }
+    }
+  }
+}
+.p-content {
+  width: 325px;
+
+  padding: 20px 0 0 0;
+  // border-bottom: solid 1px #707070;
+  display: inline-block;
+  text-align: center;
+  height: 52px;
+  line-height: 1.5;
+  font-size: 14px;
+  font-weight: 400;
+
+  @include breakpoint(pc) {
+    border-left: solid 1px #707070;
+
+    display: table-cell;
+    // padding: 28px 106px 27px 30px;
+    width: 41%;
+
+    // padding: 28px 405px 27px 30px;
+  }
+  &__inner {
+    width: 72%;
+    align-items: center;
+    line-height: 1.5;
+    height: 63px;
+    margin: 0 auto;
+    text-align: left;
+    @include breakpoint(pc) {
+      width: 235px;
+    }
+  }
+}
+.u-width {
+  width: 327px;
 }

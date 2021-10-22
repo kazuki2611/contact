@@ -312,7 +312,7 @@ progress {
 }
 
 body {
-  font-family: "Noto Sans JP";
+  font-family: "lato","Noto Sans JP ";
   width: 100%;
   overflow-x: hidden;
 }
@@ -607,7 +607,7 @@ html.is-open {
   padding-top: 2px;
   color: #FF8A00;
   width: 86px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   height: 20px;
   line-height: 1, 2;
   border: solid 1px #FF8A00;
@@ -646,7 +646,6 @@ html.is-open {
   display: block;
   position: absolute;
   left: 0;
-  top: -2px;
   width: 3px;
   height: 26px;
   border-radius: 2px;
@@ -688,7 +687,7 @@ html.is-open {
 .p-input img {
   position: absolute;
   top: 24px;
-  left: 299px;
+  right: 16px;
 }
 
 @media (min-width: 960px) {
@@ -811,7 +810,78 @@ html.is-open {
   text-align: center;
   align-items: center;
   height: 100%;
-  margin-top: 24px;
+  margin: 24px auto 24px auto;
+  width: 327px;
+}
+
+@media (min-width: 960px) {
+  .p-check {
+    margin-top: 0;
+  }
+}
+
+.p-check__text {
+  text-align: center;
+  align-items: center;
+  height: 100%;
+  margin: 0 auto;
+  width: 327px;
+}
+
+.p-check__text .c-button {
+  width: 100%;
+  border-radius: 25px;
+  height: 50px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 40px;
+  position: relative;
+  background: linear-gradient(60deg, #ff8a00 0%, #ffbd27 100%);
+}
+
+@media (min-width: 960px) {
+  .p-check__text .c-button {
+    margin-top: 0;
+  }
+}
+
+.p-check__text .c-button__2 {
+  font-size: 16px;
+  font-weight: 500;
+  width: 100%;
+  border-radius: 25px;
+  height: 50px;
+  background-color: #fff;
+  border: solid 1px #ff8a00;
+  color: #ff8a00;
+  position: relative;
+  margin-top: 16px;
+}
+
+@media (min-width: 960px) {
+  .p-check__text .c-button__2 {
+    width: 300px;
+  }
+}
+
+.p-check__text .c-button__2 img {
+  position: absolute;
+  top: 45%;
+  right: 10%;
+}
+
+@media (min-width: 960px) {
+  .p-check__text .c-button {
+    margin-top: 71px;
+    width: 300px;
+  }
+}
+
+.p-check__text .c-button img {
+  position: absolute;
+  top: 45%;
+  right: 10%;
 }
 
 .p-check p {
@@ -833,18 +903,51 @@ html.is-open {
   align-items: center;
 }
 
+.p-check__box {
+  height: 92px;
+}
+
 .p-check .c-button {
+  width: 100%;
+  border-radius: 25px;
+  height: 50px;
   color: #fff;
   font-size: 16px;
   font-weight: 500;
-  margin-top: 42px;
+  position: relative;
   background: linear-gradient(60deg, #ff8a00 0%, #ffbd27 100%);
+}
+
+.p-check .c-button__2 {
+  font-size: 16px;
+  font-weight: 500;
+  width: 100%;
+  border-radius: 25px;
+  height: 50px;
+  background-color: #fff;
+  border: solid 1px #ff8a00;
+  color: #ff8a00;
+  position: relative;
+  margin-top: 16px;
+}
+
+.p-check .c-button__2 img {
+  position: absolute;
+  top: 45%;
+  right: 10%;
 }
 
 @media (min-width: 960px) {
   .p-check .c-button {
     margin-top: 82px;
+    width: 300px;
   }
+}
+
+.p-check .c-button img {
+  position: absolute;
+  top: 45%;
+  right: 10%;
 }
 
 .checkbox-input {
@@ -1048,7 +1151,7 @@ html.is-open {
   width: 100%;
   height: 487px;
   padding: 16px 16px 0 16px;
-  background-color: #F8F8F8;
+  background-color: #f8f8f8;
   margin-top: 8px;
   overflow: auto;
 }
@@ -1063,5 +1166,196 @@ html.is-open {
   .p-box {
     height: 197px;
   }
+}
+
+.p-form__check {
+  text-align: center;
+  width: 87%;
+  margin: 0 auto;
+}
+
+@media (min-width: 960px) {
+  .p-form__check {
+    max-width: 800px;
+  }
+}
+
+.p-form__check .c-check {
+  font-family: "Noto Sans JP ";
+  font-size: 14px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  line-height: 1.2;
+}
+
+@media (min-width: 960px) {
+  .p-form__check .c-check {
+    font-size: 16px;
+    margin-top: 80px;
+    margin-bottom: 88px;
+  }
+}
+
+.p-form__check__wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.p-form__check__wrap img {
+  width: 42px;
+  height: 42px;
+  object-fit: cover;
+}
+
+.p-form__check__wrap p {
+  font-size: 14px;
+  padding-left: 14px;
+}
+
+.p-table {
+  width: 325px;
+  margin: 0 auto;
+  border: 1px solid #707070;
+  border-top: none;
+  border-collapse: collapse;
+  color: #444444;
+  font-weight: 400;
+}
+
+.p-table .p-box {
+  margin-top: 0;
+  padding: 16px 16px 0 16px;
+  line-height: 1.8;
+  height: 442px;
+}
+
+@media (min-width: 960px) {
+  .p-table {
+    margin-top: 30px;
+    padding: 10px 20px 0 20px;
+    max-width: 800px;
+    width: 8000px;
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+}
+
+.p-table th {
+  font-family: "Noto Sans JP ";
+  width: 325px;
+  font-weight: 400;
+  height: 52px;
+  border-bottom: solid 1px #707070;
+  width: 100%;
+  padding: 20px 0 17px 0;
+  background-color: #f8f8f8;
+  line-height: 1.2;
+  display: block;
+  font-size: 14px;
+  border-top: solid 1px #707070;
+}
+
+@media (min-width: 960px) {
+  .p-table th {
+    display: table-cell;
+    width: 247px;
+    text-align: center;
+  }
+}
+
+.p-table .c-table {
+  width: 325px;
+  padding: 20px 0 0 0;
+  display: inline-block;
+  text-align: center;
+  height: 52px;
+  line-height: 1.5;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+@media (min-width: 960px) {
+  .p-table .c-table {
+    padding-top: 0;
+    border: solid 1px #707070;
+    text-align: initial;
+    display: table-cell;
+    text-align: center;
+    width: 68%;
+  }
+}
+
+.p-table .u-heght {
+  height: 73px;
+}
+
+.p-table .u-heght__2 {
+  height: 92px;
+}
+
+.p-table .u-heght__3 {
+  height: 442px;
+  padding: 16px 16px 0 16px;
+  margin: 0;
+}
+
+@media (min-width: 960px) {
+  .p-table .u-heght__3 {
+    height: 212px;
+    padding: 17px 15px 0 15px;
+  }
+}
+
+.p-table .u-heght__4 {
+  margin: 0;
+  width: auto;
+  line-height: 1.85;
+}
+
+@media (min-width: 960px) {
+  .p-table .u-heght__4 {
+    width: 100%;
+    height: 212px;
+    overflow: auto;
+  }
+}
+
+.p-content {
+  width: 325px;
+  padding: 20px 0 0 0;
+  display: inline-block;
+  text-align: center;
+  height: 52px;
+  line-height: 1.5;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+@media (min-width: 960px) {
+  .p-content {
+    border-left: solid 1px #707070;
+    display: table-cell;
+    width: 41%;
+  }
+}
+
+.p-content__inner {
+  width: 72%;
+  align-items: center;
+  line-height: 1.5;
+  height: 63px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+@media (min-width: 960px) {
+  .p-content__inner {
+    width: 235px;
+  }
+}
+
+.u-width {
+  width: 327px;
 }
 /*# sourceMappingURL=styles.css.map */
