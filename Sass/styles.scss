@@ -15,18 +15,98 @@
 @import "object/project/breadcrumb";
 @import "object/project/box";
 
-
-
-
-
-
-
-
-
 @import "object/project/form__check";
 @import "object/project/table";
 @import "object/project/content";
 
+.p-form {
+  &__ok {
+    width: 327px;
+    margin: 0 auto;
 
-
-
+    @include breakpoint(pc) {
+      width: 1024px;
+      max-width: 1024px;
+    }
+    .c-form__text {
+      font-family: "Noto Sans JP";
+      color: $text-color;
+      font-size: 14px;
+      margin-bottom: 38px;
+      margin-top: 40px;
+      @include breakpoint(pc) {
+        font-size: 16px;
+        margin-bottom: 85px;
+        margin-top: 80px;
+      }
+    }
+    .c-button__2 {
+      font-size: 16px;
+      font-weight: 500;
+      width: 100%;
+      border-radius: 25px;
+      height: 50px;
+      font-family: "Noto Sans JP";
+      
+      background-color: #fff;
+      border: solid 1px #ff8a00;
+      color: #ff8a00;
+      position: relative;
+      display: block;
+      margin: 48px auto 0 auto;
+      width: 327px;
+      @include breakpoint (pc) {
+        width: 300px;
+        margin-top: 88px;
+      }
+      img {
+        position: absolute;
+        top: 45%;
+        right: 10%;
+      }
+    }
+    .c-img {
+      margin-top: 11px;
+      @include breakpoint (pc) {
+        margin-top: 0;
+      }
+    }
+    .u-margin__11 {
+      margin-top: 24px;
+      @include breakpoint (pc) {
+        margin-top: 0;
+      }
+    }
+    &__wrap {
+      width: 327px;
+      margin: 0 auto;
+      @include breakpoint (pc) {
+        display: flex;
+        gap :32px;
+        width: 1024px;
+        margin:29px   auto 0 auto;
+      }
+    }
+  }
+  .c-title {
+    font-family: "Noto Sans JP ";
+  }
+  &__image {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    @include breakpoint(pc) {
+      margin-bottom: 87px;
+      width: 400px;
+      height: 400px;
+      object-fit: cover;
+    }
+  }
+  .p-breadcrumb {
+    margin-top: 43px;
+    font-family: "Noto Sans JP ";
+    @include breakpoint (pc) {
+      margin-top: 83px;
+    }
+  }
+}
