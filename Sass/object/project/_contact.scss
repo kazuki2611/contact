@@ -1,0 +1,79 @@
+
+.p-contact {
+  &__top {
+    text-align: center;
+    width: 327px;
+    margin: 0 auto;
+    font-family: "Noto Sans JP ";
+    @include breakpoint(pc) {
+      width: 1024px;
+    }
+    .c-button__2 {
+      width: 327px;
+      border: solid 1px #ff8a00;
+      border-radius: 25px;
+      height: 50px;
+      position: relative;
+      @include breakpoint (pc) {
+        width: 300px;
+
+      }
+      img {
+        position: absolute;
+        top: 43%;
+        right: 10%;
+      }
+      a {
+        text-decoration: none;
+        color: #ff8a00;
+      }
+    }
+    .c-contact__text {
+      color: #989898;
+      margin-top: 40px;
+      margin-bottom: 24px;
+      font-size: 14px;
+      line-height: 1.2;
+      @include breakpoint (pc) {
+        margin-top: 80px;
+       font-size: 16px;
+      }
+    }
+    .p-breadcrumb {
+      margin-top: 43px;
+      margin-bottom: 40px;
+      @include breakpoint (pc) {
+        margin-top: 83px;
+        margin-bottom: 80px;
+      }
+      .breadcrumb__list {
+        justify-content: center;
+      }
+    }
+  }
+  &__box {
+    display: block;
+    @include breakpoint (pc) {
+      display: flex;
+      gap:24px;
+    }
+    .c-button__top {
+      height: 125px;
+      width: 327px;
+      display: block;
+      background: linear-gradient(60deg, #ff8a00 0%, #ffbd27 100%);
+      margin-top: 8px;
+      font-size: 18px;
+      @include breakpoint (pc) {
+        height: 183px;
+        width: 325px;
+        margin-top: 0;
+        font-size: 20px;
+      }
+      a {
+        color: #fff;
+        text-decoration: none;
+      }
+    }
+  }
+}
