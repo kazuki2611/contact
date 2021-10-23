@@ -1254,6 +1254,7 @@ html.is-open {
   padding-right: 5px;
   font-size: 12px;
   color: #ff8a26;
+  text-decoration: none;
 }
 
 .breadcrumb__item::after {
@@ -1333,6 +1334,7 @@ html.is-open {
 }
 
 .p-table {
+  table-layout: fixed;
   width: 325px;
   margin: 0 auto;
   border: 1px solid #707070;
@@ -1340,6 +1342,12 @@ html.is-open {
   border-collapse: collapse;
   color: #444444;
   font-weight: 400;
+}
+
+@media (min-width: 960px) {
+  .p-table {
+    width: 798px;
+  }
 }
 
 .p-table .p-box {
@@ -1354,7 +1362,7 @@ html.is-open {
     margin-top: 30px;
     padding: 10px 20px 0 20px;
     max-width: 800px;
-    width: 8000px;
+    width: 800px;
     margin: 0 auto;
     margin-top: 50px;
   }
@@ -1401,42 +1409,45 @@ html.is-open {
     text-align: initial;
     display: table-cell;
     text-align: center;
-    width: 68%;
+    width: 550px;
   }
 }
 
-.p-table .u-heght {
+.p-table .u-height {
   height: 73px;
 }
 
-.p-table .u-heght__2 {
+.p-table .u-height__2 {
   height: 92px;
 }
 
-.p-table .u-heght__3 {
+.p-table .u-height__3 {
   height: 442px;
   padding: 16px 16px 0 16px;
   margin: 0;
 }
 
 @media (min-width: 960px) {
-  .p-table .u-heght__3 {
+  .p-table .u-height__3 {
     height: 212px;
-    padding: 17px 15px 0 15px;
+    padding: 0;
   }
 }
 
-.p-table .u-heght__4 {
+.p-table .u-height__4 {
   margin: 0;
   width: auto;
-  line-height: 1.85;
+  line-height: 1.9;
+  height: auto;
 }
 
 @media (min-width: 960px) {
-  .p-table .u-heght__4 {
+  .p-table .u-height__4 {
+    padding: 15px 15px 0 15px;
     width: 100%;
     height: 212px;
     overflow: auto;
+    line-height: 1.75;
   }
 }
 
@@ -1453,6 +1464,7 @@ html.is-open {
 
 @media (min-width: 960px) {
   .p-content {
+    padding-top: 0;
     border-left: solid 1px #707070;
     display: table-cell;
     width: 41%;

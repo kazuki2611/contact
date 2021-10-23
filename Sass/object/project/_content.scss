@@ -12,6 +12,7 @@
   font-weight: 400;
 
   @include breakpoint(pc) {
+    padding-top: 0;
     border-left: solid 1px #707070;
 
     display: table-cell;

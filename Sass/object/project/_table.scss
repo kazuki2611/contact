@@ -1,6 +1,6 @@
 .p-table {
   // font-family: "Noto Sans JP";
-
+  table-layout: fixed;
   width: 325px;
   margin: 0 auto;
   // border: solid 1px #707070;
@@ -9,6 +9,9 @@
   border-collapse: collapse;
   color: $text-color;
   font-weight: 400;
+  @include breakpoint (pc) {
+    width: 798px;
+  }
 
   // text-align: left;
 
@@ -22,7 +25,7 @@
     margin-top: 30px;
     padding: 10px 20px 0 20px;
     max-width: 800px;
-    width: 8000px;
+    width: 800px;
     margin: 0 auto;
 
     margin-top: 50px;
@@ -68,12 +71,12 @@
       display: table-cell;
       text-align: center;
       // padding: 28px 106px 27px 30px;
-      width: 68%;
+     width: 550px;
 
       // padding: 28px 405px 27px 30px;
     }
   }
-  .u-heght {
+  .u-height {
     height: 73px;
     &__2 {
       height: 92px;
@@ -84,17 +87,21 @@
       margin: 0;
       @include breakpoint(pc) {
         height: 212px;
-        padding: 17px 15px 0 15px;
+        // padding: 17px 15px 0 15px;
+        padding: 0;
       }
     }
     &__4 {
       margin: 0;
       width: auto;
-      line-height: 1.85;
+      line-height: 1.9;
+      height: auto;
       @include breakpoint(pc) {
+        padding: 15px 15px 0 15px;
         width: 100%;
         height: 212px;
         overflow: auto;
+        line-height: 1.75;
       }
     }
   }
