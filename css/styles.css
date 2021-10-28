@@ -1603,7 +1603,7 @@ html.is-open {
 
 .gallery-slider .swiper-slide {
   width: auto;
-  height: 400px;
+  height: 350px;
 }
 
 .gallery-slider .swiper-slide img {
@@ -1636,11 +1636,92 @@ html.is-open {
   height: 100%;
 }
 
-.swiper-custom-button {
-  width: 48px;
-  /* ボタンの幅 */
-  height: 48px;
-  /* ボタンの高さ */
+/* 前ページ、次ページボタン共通のスタイル */
+.p-service {
+  font-family: "Noto Sans JP ";
+  width: 375px;
+  margin: 0 24px;
+}
+
+.p-service p {
+  line-height: 2.5;
+}
+
+.p-service p span {
+  font-weight: bold;
+  display: inline-block;
+  margin-right: 8px;
+  line-height: 3;
+}
+
+.p-service h1 {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 2;
+}
+
+.p-service__box {
+  display: flex;
+  gap: 16px;
+}
+
+.p-service .c-button {
+  width: 152px;
+  height: 34px;
+  margin-bottom: 32px;
+  border: solid 1px #ff8a26;
+  position: relative;
+  margin-top: 8px;
+}
+
+.p-service .c-button a {
+  text-decoration: none;
+  color: #ff8a26;
+}
+
+.p-service .c-button img {
+  position: absolute;
+  top: 35%;
+  right: 10%;
+}
+
+.p-service__inner .c-button {
+  width: 327px;
+  height: 50px;
+  background: linear-gradient(60deg, #ff8a00 0%, #ffbd27 100%);
+  border: 0;
+  position: relative;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.p-service__inner .c-button a {
+  color: #fff;
+}
+
+.p-service__inner .c-button img {
+  position: absolute;
+  top: 45%;
+  right: 10%;
+}
+
+.p-service__inner .c-button__2 {
+  background: #4cc764;
+  width: 327px;
+  height: 50px;
+  border: 0;
+  position: relative;
+  margin-bottom: 51px;
+  margin-top: 8px;
+}
+
+.p-service__inner .c-button__2 .c-icon {
+  left: 15%;
+  top: 20%;
+}
+
+.c-button {
+  border-radius: 25px;
 }
 
 .c-single__part {
@@ -1648,7 +1729,7 @@ html.is-open {
   align-items: center;
   padding-top: 2px;
   color: #FF8A00;
-  width: 86px;
+  width: 97px;
   background-color: #ffffff;
   height: 20px;
   line-height: 1, 2;
@@ -1677,6 +1758,11 @@ html.is-open {
   }
 }
 
+.p-single {
+  width: 375px;
+  margin: 0 auto;
+}
+
 .p-single__wrap {
   display: flex;
   align-items: center;
@@ -1685,5 +1771,117 @@ html.is-open {
   gap: 8px;
   width: 87%;
   margin: 0 auto;
+}
+
+.p-single .p-form .c-title {
+  margin-bottom: -24px;
+}
+
+.p-single .p-form .c-img {
+  margin-top: 48px;
+}
+
+.p-point h2 {
+  font-family: "Noto Sans JP ";
+  font-weight: bold;
+  font-size: 14px;
+  color: #FF8A00;
+  margin-bottom: 10px;
+  margin-left: 24px;
+  margin-right: 24px;
+}
+
+.p-tag h2 {
+  font-family: "Noto Sans JP ";
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.22;
+  box-sizing: border-box;
+  position: relative;
+  padding-left: 10px;
+  margin-left: 24px;
+  color: #444444;
+  margin-bottom: 24px;
+}
+
+@media (min-width: 960px) {
+  .p-tag h2 {
+    font-size: 22px;
+  }
+}
+
+.p-tag h2:before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: -4%;
+  width: 3px;
+  height: 26px;
+  border-radius: 2px;
+  background-color: #444444;
+}
+
+.p-tag__wrap {
+  background: #f6f6f6;
+  height: 188px;
+  width: 100%;
+  padding-top: 8px;
+  padding-left: 24px;
+  margin-bottom: 80px;
+}
+
+.p-tag__wrap button {
+  width: 100px;
+  height: 33px;
+  border-radius: 25px;
+  background-color: #fff;
+  margin-top: 8px;
+  margin-right: 13px;
+}
+
+.p-tag__wrap button a {
+  font-size: 10px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  color: #666666;
+}
+
+.p-concept {
+  width: 100%;
+  height: 224px;
+  background-color: #fff9ea;
+  padding-top: 24px;
+  padding-left: 24px;
+  margin-top: 88px;
+  padding-right: 24px;
+}
+
+.p-concept p {
+  font-family: "Noto Sans JP ";
+  font-size: 12px;
+  color: #444444;
+}
+
+.p-concept .c-button {
+  width: 327px;
+  height: 50px;
+  background: linear-gradient(60deg, #ff8a00 0%, #ffbd27 100%);
+  border: 0;
+  position: relative;
+  margin-bottom: 24px;
+  margin-top: 14px;
+}
+
+.p-concept .c-button a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.p-concept .c-button img {
+  position: absolute;
+  top: 45%;
+  right: 10%;
 }
 /*# sourceMappingURL=styles.css.map */
