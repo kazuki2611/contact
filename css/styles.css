@@ -1588,4 +1588,102 @@ html.is-open {
   color: #fff;
   text-decoration: none;
 }
+
+.gallery {
+  width: 100%;
+  max-width: 600px;
+  margin: 8px auto 0 auto;
+}
+
+.gallery-slider {
+  width: 100%;
+  height: auto;
+  margin: 0 0 10px 0;
+}
+
+.gallery-slider .swiper-slide {
+  width: auto;
+  height: 400px;
+}
+
+.gallery-slider .swiper-slide img {
+  display: block;
+  width: auto;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.gallery-thumbs {
+  width: 100%;
+  padding: 0;
+  overflow: hidden;
+}
+
+.gallery-thumbs .swiper-slide {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  overflow: hidden;
+  opacity: 0.4;
+}
+
+.gallery-thumbs .swiper-slide-active {
+  opacity: 1;
+}
+
+.gallery-thumbs .swiper-slide img {
+  width: auto;
+  height: 100%;
+}
+
+.swiper-custom-button {
+  width: 48px;
+  /* ボタンの幅 */
+  height: 48px;
+  /* ボタンの高さ */
+}
+
+.c-single__part {
+  text-align: center;
+  align-items: center;
+  padding-top: 2px;
+  color: #FF8A00;
+  width: 86px;
+  background-color: #ffffff;
+  height: 20px;
+  line-height: 1, 2;
+  border: solid 1px #FF8A00;
+  display: inline-block;
+  font-size: 10px;
+}
+
+@media (min-width: 960px) {
+  .c-single__part {
+    font-size: 12px;
+    width: 116px;
+    height: 23px;
+  }
+}
+
+.c-single__text {
+  font-family: "Noto Sans JP";
+  color: #666666;
+  font-size: 10px;
+}
+
+@media (min-width: 960px) {
+  .c-single__text {
+    font-size: 16px;
+  }
+}
+
+.p-single__wrap {
+  display: flex;
+  align-items: center;
+  padding-top: 30px;
+  text-align: left;
+  gap: 8px;
+  width: 87%;
+  margin: 0 auto;
+}
 /*# sourceMappingURL=styles.css.map */

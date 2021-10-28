@@ -20,4 +20,97 @@
 @import "object/project/content";
 @import "object/project/contact";
 
+.gallery {
+    width: 100%;
+    max-width: 600px;
+    // margin: 40px auto;
+    margin: 8px auto 0 auto;
+    //メイン
+    &-slider {
+        width: 100%;
+        height: auto;
+        margin: 0 0 10px 0;
 
+        .swiper-slide {
+            width: auto;
+            height: 400px;
+
+            img {
+                display: block;
+                width: auto;
+                height: 100%;
+                margin: 0 auto;
+            }
+        }
+    }
+
+    //サムネイル
+    &-thumbs {
+        width: 100%;
+        padding: 0;
+        overflow: hidden;
+
+        .swiper-slide {
+            width: 30px;
+            height: 30px;
+            text-align: center;
+            overflow: hidden;
+            opacity: 0.4;
+            &-active {
+                opacity: 1;
+            }
+
+            img {
+                width: auto;
+                height: 100%;
+            }
+        }
+    }
+}
+.swiper-custom-button
+{
+	width: 48px; /* ボタンの幅 */
+	height: 48px; /* ボタンの高さ */
+
+
+}
+
+.c-single__part {
+    text-align: center;
+    align-items: center;
+    padding-top: 2px;
+    color: $base-color;
+    width: 86px;
+    background-color: #ffffff;
+    height: 20px;
+    line-height: 1, 2;
+    border: solid 1px $base-color;
+    // margin-top: 8px;
+    display: inline-block;
+    font-size: 10px;
+    @include breakpoint(pc) {
+        font-size: 12px;
+        width: 116px;
+        height: 23px;
+        // margin-top: 19px;
+    }
+}
+.c-single__text {
+    font-family: "Noto Sans JP";
+    color: #666666;
+    font-size: 10px;
+
+    @include breakpoint(pc) {
+        font-size: 16px;
+    }
+}
+.p-single__wrap {
+    display: flex;
+    align-items: center;
+    padding-top: 30px;
+    text-align: left;
+    gap: 8px;
+   width: 87%;
+   margin: 0 auto;
+  
+}

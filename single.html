@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="Sass/styles.scss">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <meta name="robots" content="noindex">
+    <script src="./js/swiper.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/css/swiper.css">
+</head>
+
+<body>
+
+    <main>
+        <div class="p-single__wrap">
+
+            <span class="c-single__part">
+                賃貸マンション
+              </span>
+              <p class="c-single__text">
+                情報更新日：2021年9月30日
+              </p>
+        </div>
+        <!-- スライダー -->
+        <div class="gallery">
+            <div class="swiper-container gallery-slider">
+                <!-- メイン -->
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="./image/single.svg" alt=""></div>
+                    <div class="swiper-slide"><img src="./image/single.svg" alt=""></div>
+                    <div class="swiper-slide"><img src="./image/single.svg" alt=""></div>
+                    <div class="swiper-slide"><img src="./image/single.svg" alt=""></div>
+                    <div class="swiper-slide"><img src="./image/single.svg" alt=""></div>
+                    <div class="swiper-slide"><img src="./image/single.svg" alt=""></div>
+                    <div class="swiper-slide"><img src="./image/single.svg" alt=""></div>
+                    <div class="swiper-slide"><img src="./image/single.svg" alt=""></div>
+                    <div class="swiper-slide"><img src="./image/single.svg" alt=""></div>
+                    <div class="swiper-slide"><img src="./image/single.svg" alt=""></div>
+                    <div class="swiper-slide"><img src="./image/single.svg" alt=""></div>
+                    <div class="swiper-slide"><img src="./image/single.svg" alt=""></div>
+                    <div class="swiper-slide"><img src="./image/single.svg" alt=""></div>
+                    <div class="swiper-slide"><img src="./image/single.svg" alt=""></div>
+                    <div class="swiper-slide"><img src="./image/single.svg" alt=""></div>
+                    <div class="swiper-slide"><img src="./image/single.svg" alt=""></div>
+                    <div class="swiper-slide"><img src="./image/single.svg" alt=""></div>
+                    <div class="swiper-slide"><img src="./image/single.svg" alt=""></div>
+                    <div class="swiper-slide"><img src="./image/single.svg" alt=""></div>
+                    <div class="swiper-slide"><img src="./image/single.svg" alt=""></div>
+                </div>
+                <div class="swiper-button-prev swiper-button-white swiper-custom-button"></div>
+                <div class="swiper-button-next swiper-button-white swiper-custom-button"></div>
+                
+            </div>
+            <!-- サムネイル -->
+            <div class="swiper-container gallery-thumbs">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="./image/single.svg" alt=""></div>
+                    <div class="swiper-slide"><img src="./image/single.svg" alt=""></div>
+                    <div class="swiper-slide"><img src="./image/single.svg" alt=""></div>
+                    <div class="swiper-slide"><img src="./image/single.svg" alt=""></div>
+                    <div class="swiper-slide"><img src="./image/single.svg" alt=""></div>
+                    <div class="swiper-slide"><img src="./image/single.svg" alt=""></div>
+                    <div class="swiper-slide"><img src="./image/single.svg" alt=""></div>
+                    <div class="swiper-slide"><img src="./image/single.svg" alt=""></div>
+                    <div class="swiper-slide"><img src="./image/single.svg" alt=""></div>
+                    <div class="swiper-slide"><img src="./image/single.svg" alt=""></div>
+                    <div class="swiper-slide"><img src="./image/single.svg" alt=""></div>
+                    <div class="swiper-slide"><img src="./image/single.svg" alt=""></div>
+                    <div class="swiper-slide"><img src="./image/single.svg" alt=""></div>
+                    <div class="swiper-slide"><img src="./image/single.svg" alt=""></div>
+                    <div class="swiper-slide"><img src="./image/single.svg" alt=""></div>
+                    <div class="swiper-slide"><img src="./image/single.svg" alt=""></div>
+                    <div class="swiper-slide"><img src="./image/single.svg" alt=""></div>
+                    <div class="swiper-slide"><img src="./image/single.svg" alt=""></div>
+                    <div class="swiper-slide"><img src="./image/single.svg" alt=""></div>
+                    <div class="swiper-slide"><img src="./image/single.svg" alt=""></div>
+                </div>
+            </div>
+        </div>
+    </main>
+   
+   <script>
+       var slider = new Swiper ('.gallery-slider', {
+    slidesPerView: 1,
+    centeredSlides: true,
+    loop: true,
+    loopedSlides: 20, //スライドの枚数と同じ値を指定
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+});
+
+//サムネイル
+var thumbs = new Swiper ('.gallery-thumbs', {
+    slidesPerView: 'auto',
+    spaceBetween: 8,
+    centeredSlides: true,
+    loop: true,
+    slideToClickedSlide: true,
+});
+
+//4系～
+//メインとサムネイルを紐づける
+slider.controller.control = thumbs;
+thumbs.controller.control = slider;
+   </script>
+</body>
