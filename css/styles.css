@@ -1616,7 +1616,15 @@ html.is-open {
 .gallery-thumbs {
   width: 100%;
   padding: 0;
-  overflow: hidden;
+}
+
+@media (min-width: 960px) {
+  .gallery-thumbs {
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
 
 .gallery-thumbs .swiper-slide {
@@ -1625,6 +1633,13 @@ html.is-open {
   text-align: center;
   overflow: hidden;
   opacity: 0.4;
+}
+
+@media (min-width: 960px) {
+  .gallery-thumbs .swiper-slide {
+    width: 63px;
+    height: 63px;
+  }
 }
 
 .gallery-thumbs .swiper-slide-active {
@@ -1636,6 +1651,12 @@ html.is-open {
   height: 100%;
 }
 
+@media (min-width: 960px) {
+  .gallery-thumbs .swiper-slide img {
+    width: 100px;
+  }
+}
+
 /* 前ページ、次ページボタン共通のスタイル */
 .p-service {
   font-family: "Noto Sans JP ";
@@ -1644,19 +1665,24 @@ html.is-open {
 }
 
 .p-service p {
-  line-height: 2.5;
+  font-family: "lato";
+  font-size: 14px;
+  border-bottom-left-radius: 2.1;
 }
 
 .p-service p span {
+  font-family: "Noto Sans JP ";
   font-weight: bold;
   display: inline-block;
-  margin-right: 8px;
-  line-height: 3;
+  margin-right: 5px;
+  line-height: 2.1;
+  font-size: 12px;
 }
 
 .p-service h1 {
   font-size: 18px;
   font-weight: bold;
+  margin-top: 12px;
   line-height: 2;
 }
 
@@ -1672,6 +1698,7 @@ html.is-open {
   border: solid 1px #ff8a26;
   position: relative;
   margin-top: 8px;
+  font-size: 12px;
 }
 
 .p-service .c-button a {
@@ -1693,6 +1720,7 @@ html.is-open {
   position: relative;
   margin-bottom: 0;
   margin-top: 0;
+  font-size: 16px;
 }
 
 .p-service__inner .c-button a {
@@ -1702,10 +1730,11 @@ html.is-open {
 .p-service__inner .c-button img {
   position: absolute;
   top: 45%;
-  right: 10%;
+  right: 7%;
 }
 
 .p-service__inner .c-button__2 {
+  font-size: 16px;
   background: #4cc764;
   width: 327px;
   height: 50px;
@@ -1716,8 +1745,12 @@ html.is-open {
 }
 
 .p-service__inner .c-button__2 .c-icon {
-  left: 15%;
+  left: 20%;
   top: 20%;
+}
+
+.p-service__inner .c-button__2 a {
+  padding-left: 20px;
 }
 
 .c-button {
@@ -1747,7 +1780,7 @@ html.is-open {
 }
 
 .c-single__text {
-  font-family: "Noto Sans JP";
+  font-family: "lato";
   color: #666666;
   font-size: 10px;
 }
@@ -1763,6 +1796,12 @@ html.is-open {
   margin: 0 auto;
 }
 
+@media (min-width: 960px) {
+  .p-single {
+    width: 702px;
+  }
+}
+
 .p-single__wrap {
   display: flex;
   align-items: center;
@@ -1773,12 +1812,37 @@ html.is-open {
   margin: 0 auto;
 }
 
+@media (min-width: 960px) {
+  .p-single__wrap {
+    display: block;
+  }
+}
+
 .p-single .p-form .c-title {
   margin-bottom: -24px;
 }
 
 .p-single .p-form .c-img {
   margin-top: 48px;
+}
+
+@media (min-width: 960px) {
+  .p-single__contents {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.p-single__contents h1 {
+  font-size: 26px;
+  font-weight: bold;
+  display: none;
+}
+
+@media (min-width: 960px) {
+  .p-single__contents h1 {
+    display: block;
+  }
 }
 
 .p-point h2 {
@@ -1862,6 +1926,7 @@ html.is-open {
   font-family: "Noto Sans JP ";
   font-size: 12px;
   color: #444444;
+  line-height: 1.7;
 }
 
 .p-concept .c-button {

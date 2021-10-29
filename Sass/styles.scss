@@ -48,14 +48,23 @@
     &-thumbs {
         width: 100%;
         padding: 0;
-        overflow: hidden;
-
+       
+        @include breakpoint(pc) {
+            height: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
         .swiper-slide {
             width: 30px;
             height: 30px;
             text-align: center;
             overflow: hidden;
             opacity: 0.4;
+            @include breakpoint(pc) {
+                width: 63px;
+                height: 63px;
+            }
             &-active {
                 opacity: 1;
             }
@@ -63,10 +72,14 @@
             img {
                 width: auto;
                 height: 100%;
+                @include breakpoint (pc){
+                    width: 100px;
+                }
             }
         }
     }
 }
+
 // .swiper-button-prev {
 //   background-image: none;
 // }
@@ -156,18 +169,25 @@
 
     // margin: 0 24px 0 24px;
     p {
-        line-height: 2.5;
-        
+        // line-height: 2.5;
+        font-family: "lato";
+        font-size: 14px;
+        border-bottom-left-radius: 2.1;
         span {
+            font-family: "Noto Sans JP ";
             font-weight: bold;
             display: inline-block;
-            margin-right: 8px;
-            line-height: 3;
+            margin-right: 5px;
+            // line-height: 3;
+            line-height: 2.1;
+            font-size: 12px;
         }
     }
     h1 {
-        font-size:18px ;
+        font-size: 18px;
         font-weight: bold;
+        // line-height: 2;
+        margin-top: 12px;
         line-height: 2;
     }
     &__box {
@@ -181,6 +201,7 @@
         border: solid 1px #ff8a26;
         position: relative;
         margin-top: 8px;
+        font-size: 12px;
         a {
             text-decoration: none;
             color: #ff8a26;
@@ -200,6 +221,7 @@
             position: relative;
             margin-bottom: 0;
             margin-top: 0;
+            font-size: 16px;
             // margin-left: 24px;
 
             a {
@@ -208,9 +230,10 @@
             img {
                 position: absolute;
                 top: 45%;
-                right: 10%;
+                right: 7%;
             }
             &__2 {
+                font-size: 16px;
                 background: #4cc764;
                 width: 327px;
                 height: 50px;
@@ -220,8 +243,11 @@
                 margin-top: 8px;
                 // margin-left: 24px;
                 .c-icon {
-                    left: 15%;
+                    left: 20%;
                     top: 20%;
+                }
+                a {
+                    padding-left: 20px;
                 }
             }
         }
@@ -254,7 +280,7 @@
     }
 }
 .c-single__text {
-    font-family: "Noto Sans JP";
+    font-family: "lato";
     color: #666666;
     font-size: 10px;
 
@@ -266,6 +292,9 @@
     width: 375px;
     margin: 0 auto;
     // background-color: green;
+    @include breakpoint(pc) {
+        width: 702px;
+    }
     &__wrap {
         display: flex;
         align-items: center;
@@ -274,6 +303,9 @@
         gap: 8px;
         width: 87%;
         margin: 0 auto;
+        @include breakpoint(pc) {
+            display: block;
+        }
     }
     .p-form {
         .c-title {
@@ -282,6 +314,20 @@
         }
         .c-img {
             margin-top: 48px;
+        }
+    }
+    &__contents {
+        @include breakpoint(pc) {
+            display: flex;
+            align-items: center;
+        }
+        h1 {
+            font-size: 26px;
+            font-weight: bold;
+            display: none;
+            @include breakpoint(pc) {
+                display: block;
+            }
         }
     }
 }
@@ -361,7 +407,7 @@
         font-family: "Noto Sans JP ";
         font-size: 12px;
         color: $text-color;
-       
+        line-height: 1.7;
     }
     .c-button {
         width: 327px;
