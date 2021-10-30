@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="55" height="67" viewBox="0 0 55 67">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.059" y1="1.422" x2="0.933" y2="-0.369" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ff8a00"/>
+      <stop offset="1" stop-color="#ffbd27"/>
+    </linearGradient>
+  </defs>
+  <g id="グループ_168" data-name="グループ 168" transform="translate(-320 -977)">
+    <text id="エアコン" transform="translate(348 1042)" fill="#727272" stroke="rgba(0,0,0,0)" stroke-width="1" font-size="9" font-family="HiraginoSans-W3, Hiragino Sans" letter-spacing="-0.07em"><tspan x="-17.055" y="0">エアコン</tspan></text>
+    <path id="icons-09" d="M9.554,29.689H45.446V21.6H9.554Zm33.521-2.72a.948.948,0,1,1-.948.948A.948.948,0,0,1,43.075,26.969Zm-2.929,0a.948.948,0,1,1-.948.948A.948.948,0,0,1,40.146,26.969Zm-29.4,6.122a1.418,1.418,0,0,0,.337.311H43.922a1.418,1.418,0,0,0,.337-.311,7.169,7.169,0,0,0,1.035-2.047H9.687a7.146,7.146,0,0,0,1.054,2.047Zm1.387-1.315H42.873v.814H12.127ZM50.151,0H4.848A4.846,4.846,0,0,0,0,4.848v45.3A4.849,4.849,0,0,0,4.848,55h45.3A4.851,4.851,0,0,0,55,50.152V4.848A4.848,4.848,0,0,0,50.151,0ZM46.8,30.149a7.412,7.412,0,0,1-1.476,3.778,2,2,0,0,1-1.242.828H10.923a1.985,1.985,0,0,1-1.242-.828,7.4,7.4,0,0,1-1.474-3.778V21.6A1.354,1.354,0,0,1,9.56,20.243H45.446A1.354,1.354,0,0,1,46.8,21.6Z" transform="translate(320 977)" fill="url(#linear-gradient)"/>
+  </g>
+</svg>

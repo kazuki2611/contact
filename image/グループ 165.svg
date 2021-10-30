@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="55" height="67" viewBox="0 0 55 67">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.059" y1="1.422" x2="0.933" y2="-0.369" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ff8a00"/>
+      <stop offset="1" stop-color="#ffbd27"/>
+    </linearGradient>
+  </defs>
+  <g id="グループ_165" data-name="グループ 165" transform="translate(-384 -900)">
+    <text id="独立洗面台" transform="translate(411 966)" fill="#727272" font-size="9" font-family="HiraginoSans-W3, Hiragino Sans" letter-spacing="-0.07em"><tspan x="-21.24" y="0">独立洗面台</tspan></text>
+    <path id="icons-08" d="M34.006,29.724c0,1.1-2.913,1.994-6.507,1.994s-6.5-.892-6.5-1.994,2.913-1.983,6.5-1.983S34.006,28.623,34.006,29.724ZM33.685,8.9H29.642l-8.488,8.784v5.441H33.677Zm-8.517,0-4.006,4.261v1.743l5.8-6Zm-4.006,0v2.9l2.733-2.9ZM55,4.848v45.3A4.851,4.851,0,0,1,50.152,55H4.848A4.848,4.848,0,0,1,0,50.151V4.848A4.846,4.846,0,0,1,4.848,0h45.3A4.848,4.848,0,0,1,55,4.848ZM19.228,24.671a.387.387,0,0,0,.387.379H35.229a.387.387,0,0,0,.387-.387V7.356a.387.387,0,0,0-.387-.385H19.615a.387.387,0,0,0-.387.385Zm-5.565,8.676H41.343l-5.3-6.461a.768.768,0,0,0-.6-.282H19.555a.776.776,0,0,0-.6.282Zm27.876,1.546H13.469V47.257a.772.772,0,0,0,.774.772H40.757a.774.774,0,0,0,.774-.772Z" transform="translate(384 900)" fill="url(#linear-gradient)"/>
+  </g>
+</svg>

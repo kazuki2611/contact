@@ -1595,6 +1595,12 @@ html.is-open {
   margin: 8px auto 0 auto;
 }
 
+@media (min-width: 960px) {
+  .gallery {
+    width: 702px;
+  }
+}
+
 .gallery-slider {
   width: 100%;
   height: auto;
@@ -1606,11 +1612,24 @@ html.is-open {
   height: 350px;
 }
 
+@media (min-width: 960px) {
+  .gallery-slider .swiper-slide {
+    width: 702px;
+    height: auto;
+  }
+}
+
 .gallery-slider .swiper-slide img {
   display: block;
   width: auto;
   height: 100%;
   margin: 0 auto;
+}
+
+@media (min-width: 960px) {
+  .gallery-slider .swiper-slide img {
+    margin: 0;
+  }
 }
 
 .gallery-thumbs {
@@ -1664,6 +1683,12 @@ html.is-open {
   margin: 0 24px;
 }
 
+@media (min-width: 960px) {
+  .p-service {
+    margin-right: 0;
+  }
+}
+
 .p-service p {
   font-family: "lato";
   font-size: 14px;
@@ -1712,6 +1737,23 @@ html.is-open {
   right: 10%;
 }
 
+@media (min-width: 960px) {
+  .p-service .c-button {
+    display: none;
+  }
+}
+
+@media (min-width: 960px) {
+  .p-service__inner {
+    display: flex;
+    height: 80px;
+    width: 1366px;
+    gap: 24px;
+    position: fixed;
+    bottom: 0;
+  }
+}
+
 .p-service__inner .c-button {
   width: 327px;
   height: 50px;
@@ -1733,6 +1775,13 @@ html.is-open {
   right: 7%;
 }
 
+@media (min-width: 960px) {
+  .p-service__inner .c-button {
+    display: block;
+    width: 300px;
+  }
+}
+
 .p-service__inner .c-button__2 {
   font-size: 16px;
   background: #4cc764;
@@ -1742,6 +1791,13 @@ html.is-open {
   position: relative;
   margin-bottom: 51px;
   margin-top: 8px;
+}
+
+@media (min-width: 960px) {
+  .p-service__inner .c-button__2 {
+    width: 300px;
+    margin-top: 0;
+  }
 }
 
 .p-service__inner .c-button__2 .c-icon {
@@ -1799,6 +1855,8 @@ html.is-open {
 @media (min-width: 960px) {
   .p-single {
     width: 702px;
+    margin: 0;
+    margin-left: 171px;
   }
 }
 
@@ -1816,14 +1874,6 @@ html.is-open {
   .p-single__wrap {
     display: block;
   }
-}
-
-.p-single .p-form .c-title {
-  margin-bottom: -24px;
-}
-
-.p-single .p-form .c-img {
-  margin-top: 48px;
 }
 
 @media (min-width: 960px) {
@@ -1845,6 +1895,27 @@ html.is-open {
   }
 }
 
+@media (min-width: 960px) {
+  .p-form__ok__single {
+    margin-top: 87px;
+    max-width: 1024px;
+  }
+}
+
+.p-form__ok__single .c-title {
+  margin-bottom: -24px;
+}
+
+.p-form__ok__single .c-img {
+  margin-top: 48px;
+}
+
+@media (min-width: 960px) {
+  .p-form__ok__single .c-img {
+    margin-top: 29px;
+  }
+}
+
 .p-point h2 {
   font-family: "Noto Sans JP ";
   font-weight: bold;
@@ -1853,6 +1924,19 @@ html.is-open {
   margin-bottom: 10px;
   margin-left: 24px;
   margin-right: 24px;
+}
+
+@media (min-width: 960px) {
+  .p-point h2 {
+    display: none;
+  }
+}
+
+@media (min-width: 960px) {
+  .p-tag {
+    width: 1366px;
+    margin: 0 auto;
+  }
 }
 
 .p-tag h2 {
@@ -1871,6 +1955,9 @@ html.is-open {
 @media (min-width: 960px) {
   .p-tag h2 {
     font-size: 22px;
+    margin-left: 171px;
+    margin-right: 0;
+    margin-top: 1500px;
   }
 }
 
@@ -1886,13 +1973,47 @@ html.is-open {
   background-color: #444444;
 }
 
+@media (min-width: 960px) {
+  .p-tag__contents {
+    width: 100%;
+    background: #f6f6f6;
+    height: 251px;
+  }
+}
+
 .p-tag__wrap {
-  background: #f6f6f6;
   height: 188px;
   width: 100%;
   padding-top: 8px;
   padding-left: 24px;
   margin-bottom: 80px;
+}
+
+@media (min-width: 960px) {
+  .p-tag__wrap {
+    width: 1024px;
+    height: 251px;
+    padding-top: 23px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.p-tag__wrap span {
+  display: none;
+}
+
+@media (min-width: 960px) {
+  .p-tag__wrap span {
+    display: initial;
+  }
+}
+
+@media (min-width: 960px) {
+  .p-tag__wrap span button {
+    margin-right: 6px;
+  }
 }
 
 .p-tag__wrap button {
@@ -1904,12 +2025,27 @@ html.is-open {
   margin-right: 13px;
 }
 
+@media (min-width: 960px) {
+  .p-tag__wrap button {
+    width: 240px;
+    height: 40px;
+    margin-top: 0;
+    margin-right: 8px;
+  }
+}
+
 .p-tag__wrap button a {
   font-size: 10px;
   align-items: center;
   display: flex;
   justify-content: center;
   color: #666666;
+}
+
+@media (min-width: 960px) {
+  .p-tag__wrap button a {
+    font-size: 16px;
+  }
 }
 
 .p-concept {
@@ -1922,11 +2058,38 @@ html.is-open {
   padding-right: 24px;
 }
 
+@media (min-width: 960px) {
+  .p-concept {
+    margin-top: 88px;
+    width: 1366px;
+    text-align: center;
+    padding-top: 64px;
+    height: 282px;
+    margin: 88px auto 0 auto;
+  }
+}
+
 .p-concept p {
   font-family: "Noto Sans JP ";
   font-size: 12px;
   color: #444444;
   line-height: 1.7;
+}
+
+@media (min-width: 960px) {
+  .p-concept p {
+    font-size: 14px;
+  }
+}
+
+.p-concept p br {
+  display: none;
+}
+
+@media (min-width: 960px) {
+  .p-concept p br {
+    display: initial;
+  }
 }
 
 .p-concept .c-button {
@@ -1939,6 +2102,12 @@ html.is-open {
   margin-top: 14px;
 }
 
+@media (min-width: 960px) {
+  .p-concept .c-button {
+    margin-top: 17px;
+  }
+}
+
 .p-concept .c-button a {
   color: #fff;
   text-decoration: none;
@@ -1948,5 +2117,122 @@ html.is-open {
   position: absolute;
   top: 45%;
   right: 10%;
+}
+
+.p-description {
+  display: none;
+}
+
+@media (min-width: 960px) {
+  .p-description {
+    display: block;
+    width: 246px;
+  }
+}
+
+.p-description h4 {
+  text-align: center;
+  font-family: "Noto Sans JP ";
+  font-weight: 400;
+  color: #666666;
+}
+
+.p-description h5 {
+  font-family: "Noto Sans JP ";
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 20px;
+  color: #FF8A00;
+}
+
+.p-description .c-text {
+  font-family: "loto";
+  font-size: 14px;
+  color: #444444;
+  margin-top: 10px;
+  border-bottom: 1px dotted #dadada;
+  padding-bottom: 24px;
+}
+
+.p-description .u-border {
+  border-bottom: none;
+}
+
+.p-description .c-button {
+  width: 246px;
+  height: 50px;
+  margin-bottom: 8px;
+  border: solid 1px #ff8a26;
+  position: relative;
+  margin-top: 24px;
+  font-size: 12px;
+}
+
+.p-description .c-button a {
+  text-decoration: none;
+  color: #ff8a26;
+}
+
+.p-description .c-button img {
+  position: absolute;
+  top: 35%;
+  right: 10%;
+}
+
+.p-description .p-table__inner {
+  width: 246px;
+  table-layout: fixed;
+  border-collapse: collapse;
+  color: #444444;
+  font-weight: 400;
+}
+
+.p-description .p-table__inner th {
+  text-align: left;
+  font-size: 14px;
+  color: #FF8A00;
+  font-family: "Noto Sans JP ";
+  height: 69.5px;
+  border-bottom: 1px dotted #dadada;
+  width: 123px;
+  display: table-cell;
+}
+
+.p-description .p-table__inner td {
+  text-align: right;
+  height: 69.5px;
+  font-family: "lato";
+  font-size: 16px;
+  color: #444444;
+  border-bottom: 1px dotted #dadada;
+  width: 123px;
+}
+
+.p-description .p-table__inner td span {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 0;
+}
+
+.p-description__inner {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10.5px;
+  border-bottom: 1px dotted #dadada;
+  padding-bottom: 34px;
+}
+
+.p-description__wrap {
+  margin-right: 5px;
+  text-align: center;
+}
+
+@media (min-width: 960px) {
+  .p-wrap {
+    display: flex;
+    width: 1366px;
+    margin: 0 auto;
+    gap: 100px;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
