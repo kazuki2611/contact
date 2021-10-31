@@ -29,7 +29,7 @@
     //メイン
     @include breakpoint(pc) {
         // margin-left: 171px;
-        width: 702px;
+        max-width: 700px;
     }
     &-slider {
         width: 100%;
@@ -49,7 +49,8 @@
                 height: 100%;
                 margin: 0 auto;
                 @include breakpoint(pc) {
-                    margin: 0;
+                    // margin: 0;
+                    width: 700px;
                 }
             }
         }
@@ -60,11 +61,19 @@
         width: 100%;
         padding: 0;
 
-        @include breakpoint(pc) {
-            height: 100%;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
+        // @include breakpoint(pc) {
+        //     height: 100%;
+        //     display: flex;
+        //     flex-wrap: wrap;
+        //     justify-content: space-between;
+        // }
+        .swiper-wrapper {
+            @include breakpoint(pc) {
+                justify-content: center;
+                display: flex;
+                flex-wrap: wrap;
+                width: 700px;
+            }
         }
         .swiper-slide {
             width: 30px;
@@ -72,9 +81,13 @@
             text-align: center;
             overflow: hidden;
             opacity: 0.4;
+            // @include breakpoint(pc) {
+            //     width: 63px;
+            //     height: 63px;
+            // }
             @include breakpoint(pc) {
-                width: 63px;
-                height: 63px;
+                max-width: 400px;
+                padding: 0 5px;
             }
             &-active {
                 opacity: 1;
@@ -83,9 +96,9 @@
             img {
                 width: auto;
                 height: 100%;
-                @include breakpoint(pc) {
-                    width: 100px;
-                }
+                // @include breakpoint(pc) {
+                //     width: 100px;
+                // }
             }
         }
     }
@@ -230,63 +243,6 @@
             display: none;
         }
     }
-    &__inner {
-        @include breakpoint (pc) {
-            display: flex;
-            height: 80px;
-            width: 1366px;
-            gap: 24px;
-            position: fixed;
-            bottom: 0;
-        }
-
-        .c-button {
-            width: 327px;
-            height: 50px;
-            background: linear-gradient(60deg, #ff8a00 0%, #ffbd27 100%);
-            border: 0;
-            position: relative;
-            margin-bottom: 0;
-            margin-top: 0;
-            font-size: 16px;
-            // margin-left: 24px;
-
-            a {
-                color: #fff;
-            }
-            img {
-                position: absolute;
-                top: 45%;
-                right: 7%;
-            }
-            @include breakpoint (pc) {
-                display: block;
-                width: 300px;
-            }
-            &__2 {
-                font-size: 16px;
-                background: #4cc764;
-                width: 327px;
-                height: 50px;
-                border: 0;
-                position: relative;
-                margin-bottom: 51px;
-                margin-top: 8px;
-                // margin-left: 24px;
-                @include breakpoint (pc) {
-                    width: 300px;
-                    margin-top: 0;
-                }
-                .c-icon {
-                    left: 20%;
-                    top: 20%;
-                }
-                a {
-                    padding-left: 20px;
-                }
-            }
-        }
-    }
 }
 .c-button {
     // justify-content: center;
@@ -345,7 +301,7 @@
             // margin-left: 171px;
         }
     }
-    
+
     &__contents {
         @include breakpoint(pc) {
             display: flex;
@@ -361,20 +317,25 @@
         }
     }
 }
-.p-form__ok__single{
+.p-form__ok__single {
+    width: 375px;
+    margin: 0 auto;
+    margin-top: 80px;
     @include breakpoint(pc) {
-      
+        width: 1024px;
         margin-top: 87px;
         max-width: 1024px;
-    
     }
     .c-title {
         // margin-bottom: 27px;
         margin-bottom: -24px;
+        margin-left: 24px;
+        &::before {
+            top: -4%;
+        }
         @include breakpoint(pc) {
             // margin-left: 171px;
-        
-
+            margin-left: 0;
         }
     }
     .c-img {
@@ -384,23 +345,82 @@
             // margin-left: 171px;
         }
     }
-    
 }
 .p-point {
+    @include breakpoint(pc) {
+        display: none;
+    }
     h2 {
         font-family: "Noto Sans JP ";
         font-weight: bold;
         font-size: 14px;
         color: $base-color;
         margin-bottom: 10px;
-        margin-left: 24px;
+        // margin-left: 24px;
         margin-right: 24px;
         @include breakpoint(pc) {
             display: none;
         }
     }
+    &__contents {
+        // margin-left: 24px;
+        h5 {
+            font-family: "Noto Sans JP ";
+            font-size: 14px;
+            font-weight: bold;
+            color: $base-color;
+            margin-top: 20px;
+            margin-left: 6.5px;
+        }
+        .u-border {
+            border-bottom: none;
+            &__2 {
+                border-bottom: 1px dotted #dadada;
+                padding-bottom: 40.5px;
+                @include breakpoint(pc) {
+                    border-bottom: none;
+                }
+            }
+        }
+        p {
+            color: $text-color;
+            font-size: 14px;
+            font-family: "lato";
+            border-bottom: 1px dotted #dadada;
+            margin-top: 10px;
+            padding-bottom: 16px;
+            margin-left: 6.5px;
+        }
+        .c-button__point {
+            width: 116px;
+            height: 28px;
+            border: solid 1px $base-color;
+            border-radius: 25px;
+
+            a {
+                text-decoration: none;
+                color: $base-color;
+                font-size: 12px;
+                font-family: "Noto Sans JP ";
+            }
+        }
+        .p-description__inner {
+            padding: 0 0 0 8px;
+            .p-description__wrap {
+                margin-right: 7.5px;
+                // padding: 0 8px;
+                padding-bottom: 18px;
+            }
+        }
+    }
+}
+.u-border__top {
+    border-top: 1px dotted #dadada;
+    padding-top: 19.5px;
 }
 .p-tag {
+    width: 375px;
+    margin: 0 auto;
     @include breakpoint(pc) {
         width: 1366px;
 
@@ -419,6 +439,7 @@
         margin-left: 24px;
         color: $text-color;
         margin-bottom: 24px;
+        margin-top: 40px;
         @include breakpoint(pc) {
             font-size: 22px;
 
@@ -447,10 +468,12 @@
     }
     &__wrap {
         height: 188px;
-        width: 100%;
+        width: 375px;
         padding-top: 8px;
         padding-left: 24px;
         margin-bottom: 80px;
+        margin: 0 auto;
+        background-color: #f6f6f6;
         @include breakpoint(pc) {
             width: 1024px;
             height: 251px;
@@ -471,7 +494,7 @@
                 display: initial;
             }
             button {
-                @include breakpoint (pc) {
+                @include breakpoint(pc) {
                     margin-right: 6px;
                 }
             }
@@ -504,13 +527,14 @@
     }
 }
 .p-concept {
-    width: 100%;
+    width: 375px;
     height: 224px;
     background-color: #fff9ea;
     padding-top: 24px;
     padding-left: 24px;
     margin-top: 88px;
     padding-right: 24px;
+    margin: 88px auto 0 auto;
     @include breakpoint(pc) {
         margin-top: 88px;
         width: 1366px;
@@ -518,7 +542,6 @@
         padding-top: 64px;
         height: 282px;
         margin: 88px auto 0 auto;
-
     }
     p {
         font-family: "Noto Sans JP ";
@@ -544,6 +567,7 @@
         margin-bottom: 24px;
         margin-top: 14px;
         // margin-left: 24px;
+        z-index: 1;
         @include breakpoint(pc) {
             margin-top: 17px;
         }
@@ -661,6 +685,77 @@
     }
 }
 .p-wrap {
+    &__inner {
+        display: block;
+        margin: 0 auto;
+        width: 324px;
+        z-index: 100;
+        @include breakpoint(pc) {
+            display: flex;
+            height: 80px;
+            width: 1366px;
+            gap: 24px;
+            position: fixed;
+            bottom: 0;
+            justify-content: center;
+            background-color: #fff;
+            box-shadow: 0 0 6px 0 #707070;
+            align-items: center;
+        }
+
+        .c-button {
+            width: 327px;
+            height: 50px;
+            background: linear-gradient(60deg, #ff8a00 0%, #ffbd27 100%);
+            border: 0;
+            position: relative;
+            margin-bottom: 0;
+            margin-top: 0;
+            font-size: 16px;
+            // margin-left: 24px;
+
+            a {
+                color: #fff;
+                text-decoration: none;
+            }
+            img {
+                position: absolute;
+                top: 45%;
+                right: 7%;
+            }
+            @include breakpoint(pc) {
+                display: block;
+                width: 300px;
+            }
+            &__2 {
+                font-size: 16px;
+                background: #4cc764;
+                width: 327px;
+                height: 50px;
+                border: 0;
+                position: relative;
+                margin-bottom: 51px;
+                margin-top: 8px;
+                // margin-left: 24px;
+                @include breakpoint(pc) {
+                    width: 300px;
+                    margin-top: 0;
+                    align-items: center;
+                    margin-bottom: 0;
+                }
+                .c-icon {
+                    left: 20%;
+                    top: 20%;
+                    @include breakpoint(pc) {
+                        display: none;
+                    }
+                }
+                a {
+                    padding-left: 20px;
+                }
+            }
+        }
+    }
     @include breakpoint(pc) {
         display: flex;
         width: 1366px;
