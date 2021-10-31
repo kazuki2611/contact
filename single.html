@@ -10,18 +10,18 @@
 
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="Sass/styles.scss">
-    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- <link rel="stylesheet" href="https://unpkg.com/swiper@6/swiper-bundle.min.css" /> -->
     <meta name="robots" content="noindex">
-    <script src="./js/swiper.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/css/swiper.css">
+    <!-- <script src="./js/swiper.min.js"></script> -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@6.0.4/swiper-bundle.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
         integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 </head>
 
-<body>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
-    <main>
+<body>
+  
         <div class="p-wrap">
 
             <div class="p-single">
@@ -42,7 +42,6 @@
                         情報更新日：2021年9月30日
                     </p>
                 </div>
-                <!-- スライダー -->
                 <!-- スライダー -->
                 <div class="gallery">
                     <div class="swiper-container gallery-slider">
@@ -101,7 +100,6 @@
                         <div class="thumblist"></div>
                     </div>
                 </div>
-
                 <div class="p-service">
                     <h1>Ｋａｎａｌｏａ（カナロア）</h1>
                     <div class="p-service__box">
@@ -516,35 +514,40 @@
 
 
 
+
     </main>
-
-    <script>
-        var slider = new Swiper('.gallery-slider', {
-            slidesPerView: 1,
-            centeredSlides: true,
-            loop: true,
-            loopedSlides: 20, //スライドの枚数と同じ値を指定
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-        });
-
-        //サムネイル
-        var thumbs = new Swiper('.gallery-thumbs', {
-            slidesPerView: '20',
-            // spaceBetween: 8,
-            centeredSlides: true,
-            loop: true,
-            slideToClickedSlide: true,
-
-        });
-
-
-        //4系～
-        //メインとサムネイルを紐づける
-        
-        slider.controller.control = thumbs;
-        thumbs.controller.control = slider;
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/swiper@6.0.4/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/object-fit-images/3.2.3/ofi.js">
     </script>
+
+<script>
+    var slider = new Swiper('.gallery-slider', {
+        slidesPerView: 1,
+        centeredSlides: true,
+        loop: true,
+        loopedSlides: 20, //スライドの枚数と同じ値を指定
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
+
+    //サムネイル
+    var thumbs = new Swiper('.gallery-thumbs', {
+        slidesPerView: 'auto',
+        spaceBetween: 6,
+        centeredSlides: true,
+        loop: true,
+        slideToClickedSlide: true,
+
+    });
+
+
+    //4系～
+    //メインとサムネイルを紐づける
+    
+    slider.controller.control = thumbs;
+    thumbs.controller.control = slider;
+</script>
 </body>
