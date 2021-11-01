@@ -14,177 +14,13 @@
 @import "object/utility/positon";
 @import "object/project/breadcrumb";
 @import "object/project/box";
+@import "object/project/slider";
 
 @import "object/project/form__check";
 @import "object/project/table";
 @import "object/project/content";
 @import "object/project/contact";
 @import "object/utility/border";
-
-.gallery {
-    width: 100%;
-    max-width: 600px;
-    // margin: 40px auto;
-    margin: 8px auto 0 auto;
-    //メイン
-    @include breakpoint(pc) {
-        // margin-left: 171px;
-        max-width: 700px;
-    }
-    &-slider {
-        width: 100%;
-        height: auto;
-        margin: 0 0 10px 0;
-
-        .swiper-slide {
-            width: auto;
-            height: 350px;
-            @include breakpoint(pc) {
-                width: 702px;
-                height: auto;
-            }
-            img {
-                display: block;
-                width: auto;
-                height: 100%;
-                margin: 0 auto;
-                @include breakpoint(pc) {
-                    // margin: 0;
-                    width: 700px;
-                }
-            }
-        }
-    }
-
-    //サムネイル
-    &-thumbs {
-        width: 100%;
-        padding: 0;
-
-        // @include breakpoint(pc) {
-        //     height: 100%;
-        //     display: flex;
-        //     flex-wrap: wrap;
-        //     justify-content: space-between;
-        // }
-        .swiper-wrapper {
-            @include breakpoint(pc) {
-                justify-content: center;
-                display: flex;
-                flex-wrap: wrap;
-                width: 700px;
-            }
-        }
-        .swiper-slide {
-            width: 30px;
-            height: 30px;
-            text-align: center;
-            overflow: hidden;
-            opacity: 0.4;
-            // @include breakpoint(pc) {
-            //     width: 63px;
-            //     height: 63px;
-            // }
-            @include breakpoint(pc) {
-                max-width: 400px;
-                padding: 0 5px;
-            }
-            &-active {
-                opacity: 1;
-            }
-
-            img {
-                width: auto;
-                height: 100%;
-                // @include breakpoint(pc) {
-                //     width: 100px;
-                // }
-            }
-        }
-    }
-}
-
-// .swiper-button-prev {
-//   background-image: none;
-// }
-
-// .swiper-button-prev:before {
-//   content: '';
-//   display: block;
-//   box-sizing: border-box;
-//   width: 40px;
-//   height: 40px;
-// //   border: 3px solid blue;
-// //   -webkit-border-radius: 50%;
-// //   border-radius: 50%;
-// }
-
-// .swiper-button-prev:after {
-//   content: '';
-//   display: block;
-//   width: 15px;
-//   height: 15px;
-//   border-top: 2px solid fff;
-//   border-left: 2px solid blue;
-//   -webkit-transform: rotate(-45deg);
-//   transform: rotate(-45deg);
-//   position: absolute;
-//   top: 11px;
-//   left: 13px;
-// }
-
-// .swiper-button-next {
-//   background-image: none;
-// }
-
-// .swiper-button-next:before {
-//   content: '';
-//   display: block;
-//   box-sizing: border-box;
-//   width: 40px;
-//   height: 40px;
-// //   border: 3px solid blue;
-// //   -webkit-border-radius: 50%;
-// //   border-radius: 50%;
-//   position: absolute;
-//   right: 1px;
-// }
-
-// .swiper-button-next:after {
-//   content: '';
-//   display: block;
-//   width: 15px;
-//   height: 15px;
-//   border-top: 5px solid blue;
-//   border-right: 5px solid blue;
-//   -webkit-transform: rotate(45deg);
-//   transform: rotate(45deg);
-//   position: absolute;
-//   top: 11px;
-//   right: 15px;
-// }
-/* 前ページ、次ページボタン共通のスタイル */
-// .swiper-button-prev,
-// .swiper-button-next {
-// 	background-image: none; /* デフォルトのボタン画像を消す */
-// 	width: 28px; /* ボタンの幅 */
-// 	height: 86px; /* ボタンの高さ */
-// 	margin-top: -43px; /* 縦中央配置用：ボタンの高さの半分のネガティブマージン（top:50%がすでに設定されている） */
-// }
-// /* 前ページボタンのスタイル */
-// .swiper-button-prev:before {
-// 	font-family: "Font Awesome 5 Free";
-// 	content: "\f100"; /* angle-double-leftのUnicode */
-// 	font-size: 48px;
-// 	color: #ffefd5;
-// }
-// /* 次ページボタンのスタイル */
-// .swiper-button-next:before {
-// 	font-family: "Font Awesome 5 Free";
-// 	content: "\f101"; /* angle-double-rightのUnicode */
-// 	font-size: 48px;
-// 	color: #ffefd5;
-// }
 
 .p-service {
     font-family: "Noto Sans JP ";
@@ -217,6 +53,8 @@
         // line-height: 2;
         margin-top: 12px;
         line-height: 2;
+       
+        font-family: "Red Hat Text";
     }
     &__box {
         display: flex;
@@ -251,6 +89,7 @@
     border-radius: 25px;
 }
 .c-single__part {
+    font-family: "Noto Sans JP ";
     text-align: center;
     align-items: center;
     padding-top: 2px;
@@ -268,15 +107,17 @@
         width: 116px;
         height: 23px;
         // margin-top: 19px;
+        margin-left: 16px;
     }
 }
 .c-single__text {
-    font-family: "lato";
+    font-family: "Noto Sans JP ";
     color: #666666;
     font-size: 10px;
 
     @include breakpoint(pc) {
-        font-size: 16px;
+        font-size: 12px;
+        margin-top: 7px;
     }
 }
 .p-single {
@@ -284,9 +125,12 @@
     margin: 0 auto;
     // background-color: green;
     @include breakpoint(pc) {
-        width: 702px;
-        margin: 0;
-        margin-left: 171px;
+        max-width: 702px;
+        width: 100%;
+        // margin: 0 auto;
+        // margin-left: 171px;
+        margin: 0 0 0 0;
+        padding-left: 19px;
     }
     &__wrap {
         display: flex;
@@ -299,6 +143,7 @@
         @include breakpoint(pc) {
             display: block;
             // margin-left: 171px;
+            margin: 0;
         }
     }
 
@@ -311,6 +156,7 @@
             font-size: 26px;
             font-weight: bold;
             display: none;
+            font-family: "Red Hat Text";
             @include breakpoint(pc) {
                 display: block;
             }
@@ -341,6 +187,7 @@
     .c-img {
         margin-top: 48px;
         @include breakpoint(pc) {
+            width: 320px;
             margin-top: 29px;
             // margin-left: 171px;
         }
@@ -375,8 +222,9 @@
         .u-border {
             border-bottom: none;
             &__2 {
-                border-bottom: 1px dotted #dadada;
+                border-bottom: 1px dashed #dadada;
                 padding-bottom: 40.5px;
+                border-bottom: none;
                 @include breakpoint(pc) {
                     border-bottom: none;
                 }
@@ -386,7 +234,7 @@
             color: $text-color;
             font-size: 14px;
             font-family: "lato";
-            border-bottom: 1px dotted #dadada;
+            border-bottom: 1px dashed #dadada;
             margin-top: 10px;
             padding-bottom: 16px;
             margin-left: 6.5px;
@@ -422,8 +270,8 @@
     width: 375px;
     margin: 0 auto;
     @include breakpoint(pc) {
-        width: 1366px;
-
+        max-width: 1366px;
+        width: 100%;
         margin: 0 auto;
     }
     h2 {
@@ -442,10 +290,14 @@
         margin-top: 40px;
         @include breakpoint(pc) {
             font-size: 22px;
-
-            margin-left: 171px;
-            margin-right: 0;
-            margin-top: 1500px;
+            // margin-left: 24px;
+            width: 100%;
+            margin: 5500px auto 27px auto;
+            max-width: 1024px;
+            // margin-left: 171px;
+            // margin-left: 0%;
+            // margin-right: 0;
+            // margin-top: 5550px;
         }
         &:before {
             content: "";
@@ -476,12 +328,15 @@
         background-color: #f6f6f6;
         @include breakpoint(pc) {
             width: 1024px;
-            height: 251px;
-            padding-top: 23px;
+            // height: 251px;
+            height: auto;
+            padding-top: 32px;
+            padding-left: 0;
             // padding: 0;
             margin: 0 auto;
             display: flex;
             flex-wrap: wrap;
+            
             // gap: 0;
             // padding-left: 171px;
             // padding-left: 10rem;
@@ -496,6 +351,13 @@
             button {
                 @include breakpoint(pc) {
                     margin-right: 6px;
+                    margin-top: 9px;
+                }
+                span {
+                    display: none;
+                    @include breakpoint(pc) {
+                        display: initial;
+                    }
                 }
             }
         }
@@ -509,11 +371,12 @@
             @include breakpoint(pc) {
                 width: 240px;
                 height: 40px;
-                // margin-top: 9px;
-                margin-top: 0;
+                margin-top: 9px;
+                // margin-top: 0;
                 margin-right: 8px;
             }
             a {
+                font-family: "Noto Sans JP ";
                 font-size: 10px;
                 align-items: center;
                 display: flex;
@@ -536,21 +399,43 @@
     padding-right: 24px;
     margin: 88px auto 0 auto;
     @include breakpoint(pc) {
-        margin-top: 88px;
-        width: 1366px;
+        max-width: 1366px;
         text-align: center;
+        width: 100%;
         padding-top: 64px;
         height: 282px;
-        margin: 88px auto 0 auto;
+        margin-bottom: 80px;
+        // margin-top: 88px;
+        // width: 1366px;
+        // text-align: center;
+        // padding-top: 64px;
+        // height: 282px;
+        // // margin: 88px auto 0 auto;
+        // max-width: 1366px;
+        // margin: 0;
+        // padding: 0;
     }
-    p {
-        font-family: "Noto Sans JP ";
+    &__inner {
+        max-width: 1024px;
+        width: 100%;
+        margin: 0 auto;
+        // width:50%;
+        // margin: 0 auto;
+        p {
+            font-family: "Noto Sans JP ";
         font-size: 12px;
         color: $text-color;
         line-height: 1.7;
         @include breakpoint(pc) {
             font-size: 14px;
+            // width: 1024px;
+            // margin: 0 auto;
         }
+            
+        }
+    }
+    p {
+       
         br {
             display: none;
             @include breakpoint(pc) {
@@ -564,6 +449,7 @@
         background: linear-gradient(60deg, #ff8a00 0%, #ffbd27 100%);
         border: 0;
         position: relative;
+        font-family: "Noto Sans JP ";
         margin-bottom: 24px;
         margin-top: 14px;
         // margin-left: 24px;
@@ -586,13 +472,17 @@
     display: none;
     @include breakpoint(pc) {
         display: block;
-        width: 246px;
+        max-width: 246px;
+        width: 100%;
+        margin-top: 108px;
     }
     h4 {
         text-align: center;
         font-family: "Noto Sans JP ";
         font-weight: 400;
+        border-bottom: 1px dashed #dadada;
         color: #666666;
+        padding-bottom: 22px;
     }
     h5 {
         font-family: "Noto Sans JP ";
@@ -606,8 +496,9 @@
         font-size: 14px;
         color: $text-color;
         margin-top: 10px;
-        border-bottom: 1px dotted #dadada;
-        padding-bottom: 24px;
+        border-bottom: 1px dashed #dadada;
+        padding-bottom: 20px;
+        line-height: 1.5;
     }
     .u-border {
         border-bottom: none;
@@ -623,6 +514,7 @@
         a {
             text-decoration: none;
             color: #ff8a26;
+            font-size: 16px;
         }
         img {
             position: absolute;
@@ -642,24 +534,26 @@
         color: $text-color;
         font-weight: 400;
         // border-bottom: 1px dotted #DADADA;
-
+        .u-height {
+            height: 69.5px;
+        }
         th {
             text-align: left;
             font-size: 14px;
             color: $base-color;
             font-family: "Noto Sans JP ";
-            height: 69.5px;
-            border-bottom: 1px dotted #dadada;
+            height: 54px;
+            border-bottom: 1px dashed #dadada;
             width: 123px;
             display: table-cell;
         }
         td {
             text-align: right;
-            height: 69.5px;
+            height: 54px;
             font-family: "lato";
             font-size: 16px;
             color: $text-color;
-            border-bottom: 1px dotted #dadada;
+            border-bottom: 1px dashed #dadada;
             width: 123px;
             span {
                 font-weight: bold;
@@ -673,7 +567,7 @@
         flex-wrap: wrap;
         // justify-content: center;
         margin-top: 10.5px;
-        border-bottom: 1px dotted #dadada;
+        border-bottom: 1px dashed #dadada;
         padding-bottom: 34px;
     }
     &__wrap {
@@ -688,12 +582,13 @@
     &__inner {
         display: block;
         margin: 0 auto;
-        width: 324px;
+        width: 327px;
         z-index: 100;
         @include breakpoint(pc) {
             display: flex;
             height: 80px;
-            width: 1366px;
+            max-width: 1366px;
+            width: 100%;
             gap: 24px;
             position: fixed;
             bottom: 0;
@@ -709,6 +604,7 @@
             background: linear-gradient(60deg, #ff8a00 0%, #ffbd27 100%);
             border: 0;
             position: relative;
+            font-family: "Noto Sans JP ";
             margin-bottom: 0;
             margin-top: 0;
             font-size: 16px;
@@ -732,6 +628,7 @@
                 background: #4cc764;
                 width: 327px;
                 height: 50px;
+                font-family: "Noto Sans JP ";
                 border: 0;
                 position: relative;
                 margin-bottom: 51px;
@@ -758,9 +655,11 @@
     }
     @include breakpoint(pc) {
         display: flex;
-        width: 1366px;
+        max-width: 1366px;
         margin: 0 auto;
-        gap: 100px;
+        width: 100%;
+        justify-content: center;
+        gap: 50px;
         // justify-content: center;
     }
 }

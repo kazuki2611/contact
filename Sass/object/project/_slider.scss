@@ -1,0 +1,170 @@
+.gallery {
+    width: 100%;
+    max-width: 600px;
+    // margin: 40px auto;
+    margin: 8px auto 0 auto;
+    //メイン
+    @include breakpoint(pc) {
+        // margin-left: 171px;
+        max-width: 700px;
+        // margin: 0;
+    }
+    &-slider {
+        width: 100%;
+        height: auto;
+        margin: 0 0 10px 0;
+
+        .swiper-slide {
+            width: auto;
+            height: 350px;
+            @include breakpoint(pc) {
+                // width: 702px;
+                // height: auto;
+                height: auto;
+                width: 700px;
+            }
+            img {
+                display: block;
+                width: auto;
+                height: 100%;
+                // margin: 0 auto;
+                @include breakpoint(pc) {
+                    margin: 0;
+                    width: 700px;
+                    object-fit: cover;
+                    
+                }
+            }
+        }
+    }
+
+    //サムネイル
+    &-thumbs {
+        width: 100%;
+        padding: 0;
+
+        // @include breakpoint(pc) {
+        //     height: 100%;
+        //     display: flex;
+        //     flex-wrap: wrap;
+        //     justify-content: space-between;
+        // }
+        .swiper-wrapper {
+            @include breakpoint(pc) {
+                justify-content: center;
+                display: flex;
+                // flex-wrap: wrap;
+                // width: 700px;
+                // transform: translate3d(0px,0,0) !important;
+            }
+        }
+        .swiper-slide {
+            width: 30px;
+            height: 30px;
+            text-align: center;
+            overflow: hidden;
+            opacity: 0.4;
+            // @include breakpoint(pc) {
+            //     width: 63px;
+            //     height: 63px;
+            // }
+            @include breakpoint(pc) {
+                // max-width: 400px;
+                // padding: 0 5px;
+            }
+            &-active {
+                opacity: 1;
+            }
+
+            img {
+                width: auto;
+                height: 100%;
+                // @include breakpoint(pc) {
+                //     width: 100px;
+                // }
+            }
+        }
+    }
+}
+
+// .swiper-button-prev {
+//   background-image: none;
+// }
+
+// .swiper-button-prev:before {
+//   content: '';
+//   display: block;
+//   box-sizing: border-box;
+//   width: 40px;
+//   height: 40px;
+// //   border: 3px solid blue;
+// //   -webkit-border-radius: 50%;
+// //   border-radius: 50%;
+// }
+
+// .swiper-button-prev:after {
+//   content: '';
+//   display: block;
+//   width: 15px;
+//   height: 15px;
+//   border-top: 2px solid fff;
+//   border-left: 2px solid blue;
+//   -webkit-transform: rotate(-45deg);
+//   transform: rotate(-45deg);
+//   position: absolute;
+//   top: 11px;
+//   left: 13px;
+// }
+
+// .swiper-button-next {
+//   background-image: none;
+// }
+
+// .swiper-button-next:before {
+//   content: '';
+//   display: block;
+//   box-sizing: border-box;
+//   width: 40px;
+//   height: 40px;
+// //   border: 3px solid blue;
+// //   -webkit-border-radius: 50%;
+// //   border-radius: 50%;
+//   position: absolute;
+//   right: 1px;
+// }
+
+// .swiper-button-next:after {
+//   content: '';
+//   display: block;
+//   width: 15px;
+//   height: 15px;
+//   border-top: 5px solid blue;
+//   border-right: 5px solid blue;
+//   -webkit-transform: rotate(45deg);
+//   transform: rotate(45deg);
+//   position: absolute;
+//   top: 11px;
+//   right: 15px;
+// }
+/* 前ページ、次ページボタン共通のスタイル */
+// .swiper-button-prev,
+// .swiper-button-next {
+// 	background-image: none; /* デフォルトのボタン画像を消す */
+// 	width: 28px; /* ボタンの幅 */
+// 	height: 86px; /* ボタンの高さ */
+// 	margin-top: -43px; /* 縦中央配置用：ボタンの高さの半分のネガティブマージン（top:50%がすでに設定されている） */
+// }
+// /* 前ページボタンのスタイル */
+// .swiper-button-prev:before {
+// 	font-family: "Font Awesome 5 Free";
+// 	content: "\f100"; /* angle-double-leftのUnicode */
+// 	font-size: 48px;
+// 	color: #ffefd5;
+// }
+// /* 次ページボタンのスタイル */
+// .swiper-button-next:before {
+// 	font-family: "Font Awesome 5 Free";
+// 	content: "\f101"; /* angle-double-rightのUnicode */
+// 	font-size: 48px;
+// 	color: #ffefd5;
+// }
